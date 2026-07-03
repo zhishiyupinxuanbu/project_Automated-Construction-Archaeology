@@ -1,0 +1,321 @@
+{
+  "source": "assets/fixed-format/固定版式——文物保护许可核查请示格式范本.docx",
+  "name": "固定版式——文物保护许可核查请示格式范本",
+  "doc_type": "文物保护许可申请",
+  "generated_at": "2026-06-29 16:06:49",
+  "sections": [
+    {
+      "index": 1,
+      "page_width_cm": 21.0,
+      "page_height_cm": 29.7,
+      "top_margin_cm": 3.7,
+      "bottom_margin_cm": 3.5,
+      "left_margin_cm": 2.8,
+      "right_margin_cm": 2.6
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 1,
+      "text": "XXX公司文件",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "1.0",
+      "fonts": [
+        "方正小标宋_GBK"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 2,
+      "text": "文号                               签发人：",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 3,
+      "text": "",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "101600",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 4,
+      "text": "",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 5,
+      "text": "这里是公文的标题可能会很长很长很长很长很长很长很长很长很长很长",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "方正小标宋_GBK"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 6,
+      "text": "",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 7,
+      "text": "收文机关：",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 8,
+      "text": "项目单位A拟实施项目A，项目位于xx市xx区，项目面积A公顷，建设规模及主要建设内容为建设内容A。为依法依规办理项目用地范围内文物保护相关手续，现就该项目用地范围内文物保护许可事宜请示如下。",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 9,
+      "text": "按照相关文物保护政策规范要求，现申请贵局对该项目用地范围内是否涉及文物保护单位、不可移动文物及其保护范围、建设控制地带等情况进行核查，并请出具相关审查意见。",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 10,
+      "text": "妥否，请批示。",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 11,
+      "text": "",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 12,
+      "text": "附件：1.\t附件1",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": -80.0,
+      "left_indent_pt": 112.0,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 13,
+      "text": "2.\t附件2名称长长长长长长长长长长长长长长长长长长长长长长长长",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": -32.0,
+      "left_indent_pt": 112.0,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 14,
+      "text": "",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 15,
+      "text": "",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 16,
+      "text": "发文单位名称",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": 200.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 17,
+      "text": "（与日期中心对齐确定缩进量）",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 18,
+      "text": "XXXX年X月X日",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 264.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    }
+  ],
+  "tables": [],
+  "placeholders": [
+    "XXX",
+    "项目A",
+    "xx",
+    "xx",
+    "附件1",
+    "附件2",
+    "XXXX"
+  ]
+}

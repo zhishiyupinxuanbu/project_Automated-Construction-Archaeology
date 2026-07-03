@@ -1,0 +1,498 @@
+{
+  "source": "assets/templates/库伦旗/模板——库伦旗文物核查请示.docx",
+  "name": "模板——库伦旗文物核查请示",
+  "doc_type": "文物保护许可申请",
+  "generated_at": "2026-06-29 16:06:49",
+  "sections": [
+    {
+      "index": 1,
+      "page_width_cm": 21.0,
+      "page_height_cm": 29.7,
+      "top_margin_cm": 3.7,
+      "bottom_margin_cm": 3.5,
+      "left_margin_cm": 2.8,
+      "right_margin_cm": 2.6
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 1,
+      "text": "库伦旗文化和旅游局文件",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "508000",
+      "fonts": [
+        "方正小标宋简体"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 2,
+      "text": "（蒙文发文机关标志占位，按正式模板替换）",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "228600",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 3,
+      "text": "",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 18.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "76200",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 4,
+      "text": "关于对XX项目用地范围内进行文物\n核查的请示",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 18.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "381000",
+      "fonts": [
+        "方正小标宋简体"
+      ],
+      "has_bold": true,
+      "has_highlight": false
+    },
+    {
+      "index": 5,
+      "text": "",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "127000",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 6,
+      "text": "通辽市文化旅游广电局：",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 7,
+      "text": "XX项目已获XX部门核准、批复或备案（XX〔20XX〕XX号）。",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 8,
+      "text": "一、项目名称",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": true,
+      "has_highlight": false
+    },
+    {
+      "index": 9,
+      "text": "XX项目",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 10,
+      "text": "二、建设规模及主要建设内容",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": true,
+      "has_highlight": false
+    },
+    {
+      "index": 11,
+      "text": "根据项目材料填写建设规模及主要建设内容。",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 12,
+      "text": "三、项目地点",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": true,
+      "has_highlight": false
+    },
+    {
+      "index": 13,
+      "text": "部分项目建设位于通辽市库伦旗。",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 14,
+      "text": "为加快推进项目建设，现申请对项目用地范围内进行文物核查。",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 15,
+      "text": "此申请",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 16,
+      "text": "",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "127000",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 17,
+      "text": "附件：1.文物保护许可申请",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": 32.0,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 18,
+      "text": "2.审批机关立项选址核准文件",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": 84.0,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 19,
+      "text": "3.企业法人营业执照",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": 84.0,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 20,
+      "text": "4.法定代表人身份证复印件",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": 84.0,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 21,
+      "text": "5.工程建设方案",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": 84.0,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 22,
+      "text": "6.空间范围及用地经纬度坐标 Excel 表",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": 84.0,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 23,
+      "text": "7.KML 格式坐标文件",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": 84.0,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 24,
+      "text": "8.用地宗地图",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": 84.0,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 25,
+      "text": "9.项目联系人、项目概况",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": 84.0,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 26,
+      "text": "",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "127000",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 27,
+      "text": "库伦旗文化和旅游局",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": 32.0,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 28,
+      "text": "20XX 年 X 月 X 日",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": 32.0,
+      "space_before_pt": null,
+      "space_after_pt": 0.0,
+      "line_spacing": "368300",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    }
+  ],
+  "tables": [],
+  "placeholders": [
+    "XX",
+    "XX",
+    "XX",
+    "XX",
+    "20XX",
+    "XX",
+    "XX",
+    "20XX"
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "source": "assets/templates/模板——关于申请开展XX项目考古勘探工作的请示.docx",
+  "name": "模板——关于申请开展XX项目考古勘探工作的请示",
+  "doc_type": "申请开展考古勘探工作请示",
+  "generated_at": "2026-06-29 16:06:49",
+  "sections": [
+    {
+      "index": 1,
+      "page_width_cm": 21.0,
+      "page_height_cm": 29.7,
+      "top_margin_cm": 2.54,
+      "bottom_margin_cm": 2.54,
+      "left_margin_cm": 3.17,
+      "right_margin_cm": 3.17
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 1,
+      "text": "关于申请开展{{项目名称}}考古勘探工作的请示",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": true,
+      "has_highlight": false
+    },
+    {
+      "index": 2,
+      "text": "",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 3,
+      "text": "",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 4,
+      "text": "{{收文单位}}：",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 5,
+      "text": "{{简述项目背景/意义}}【例：海勃湾水利枢纽是黄河内蒙古河段防凌减灾体系的重要控制性工程。实施海勃湾库区清淤与矿区治理一体化工程，能够在逐步恢复水库防凌（洪）库容的同时为矿区生态治理提供土料，从根本上走出“减淤、用土”的双重困境。】本项目选址位于{{项目地点}}。项目面积为{{项目面积}}。{{建设内容}}。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 6,
+      "text": "为落实文物保护工作，根据《中华人民共和国文物保护法》及《内蒙古自治区文物保护条例》有关规定，我司已委托{{勘探公司，不明时写“第三方公司”}}开展此项目的考古勘探工作，并编制完成《考古调查、勘探工作计划》。现申请对上述区域开展文物勘探工作，恳请贵局向相关部门报送材料，协调组织勘探工作。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 7,
+      "text": "此请示，请复。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 8,
+      "text": "",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 9,
+      "text": "附件：",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 10,
+      "text": "{{项目立项核准文件}}",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 11,
+      "text": "{{项目名称}}经纬度坐标表",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 12,
+      "text": "{{勘探公司资质材料}}",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 13,
+      "text": "",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 14,
+      "text": "",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 15,
+      "text": "{{发文单位}}",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 16,
+      "text": "XXXX年X月X日",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 17,
+      "text": "",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    }
+  ],
+  "tables": [],
+  "placeholders": [
+    "XXXX"
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "source": "assets/templates/模板——关于申请XX项目考古勘探验收的函.docx",
+  "name": "模板——关于申请XX项目考古勘探验收的函",
+  "doc_type": "勘探验收请示",
+  "generated_at": "2026-06-29 16:06:49",
+  "sections": [
+    {
+      "index": 1,
+      "page_width_cm": 21.0,
+      "page_height_cm": 29.7,
+      "top_margin_cm": 2.54,
+      "bottom_margin_cm": 2.54,
+      "left_margin_cm": 3.17,
+      "right_margin_cm": 3.17
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 1,
+      "text": "特布德四步套子农村公路项目",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 2,
+      "text": "考古勘探验收的函",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 3,
+      "text": "鄂托克前旗文化和旅游局：",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 4,
+      "text": "特布德四步套子农村公路项目位于鄂托克前旗上海庙镇，项目为四级公路，路线全长1.367公里，设计时速20公里/小时，路基宽6米，路面宽4.5米，路面采用沥青混凝土路面。",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 5,
+      "text": "依据《内蒙古自治区文物局关于做好基本建设用地考古工作的通知》(内文物发〔2025〕6）号文件要求，为加快项目推进，我单位已委托第三方单位对项目所在区域进行全面调查、勘探并已完成考古勘探报告。现将相关资料予以呈报，恳请贵局进行审查，并组织专家对勘探成果进行验收。",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 6,
+      "text": "此函",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 7,
+      "text": "",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 8,
+      "text": "附件：",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 9,
+      "text": "特布德四步套子农村公路项目考古调查勘探工作报告",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 10,
+      "text": "",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 11,
+      "text": "",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 12,
+      "text": "鄂托克前旗交通运输局",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": 240.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 13,
+      "text": "2025年7月18日",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": 240.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 14,
+      "text": "（联系人：xxx电话：134xxxxxxxxx）",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": -24.0,
+      "left_indent_pt": 95.8,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 15,
+      "text": "",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    }
+  ],
+  "tables": [],
+  "placeholders": [
+    "xxx",
+    "xxxxxxxxx"
+  ]
+}

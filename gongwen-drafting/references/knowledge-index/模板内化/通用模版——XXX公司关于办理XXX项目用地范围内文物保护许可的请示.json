@@ -1,0 +1,483 @@
+{
+  "source": "assets/templates/通用模版——XXX公司关于办理XXX项目用地范围内文物保护许可的请示.docx",
+  "name": "通用模版——XXX公司关于办理XXX项目用地范围内文物保护许可的请示",
+  "doc_type": "文物保护许可申请",
+  "generated_at": "2026-06-29 16:06:49",
+  "sections": [
+    {
+      "index": 1,
+      "page_width_cm": 21.0,
+      "page_height_cm": 29.7,
+      "top_margin_cm": 2.54,
+      "bottom_margin_cm": 2.54,
+      "left_margin_cm": 3.17,
+      "right_margin_cm": 3.17
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 1,
+      "text": "薛家湾供电公司关于办理内蒙古嘉洋科技有限公司年产8000吨电子级硅烷项目配套110kV供电线路工程用地范围内文物保护许可的请示",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": true
+    },
+    {
+      "index": 2,
+      "text": "准格尔旗文物局[]：",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 3,
+      "text": "内蒙古嘉洋科技有限公司年产8000吨电子级硅烷项目配套110kV供电线路工程由我公司承担建设，目前该项目已由鄂尔多斯市能源局核准，本项目为薛家湾地区“十四五”输电网规划项目，可改善并优化准格尔旗地区的电网结构[]。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 4,
+      "text": "一、项目名称",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 5,
+      "text": "内蒙古嘉洋科技有限公司年产8000吨电子级硅项目配套110kV供电线路工程。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 6,
+      "text": "二、建设规模及主要建设内容",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 7,
+      "text": "内蒙古嘉洋科技有限公司年产8000吨电子级硅项目配套110KV供电线路工程大路、光明220kV变电站各扩建1个110kV输电线路工程，路径长度约16.4km（双回路架空线路工程约14.3km，单回路架空线路约1.7km，电缆约0.4km）；新建大路-嘉洋110kV输电线路工程路径长约4.56km（双回路架空线路约3.8km，单回路架空线路约0.43km，电缆约0.33km），新建钢管杆120基。随线路新建0PGW光缆。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 8,
+      "text": "三、建设地点",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 9,
+      "text": "项目位于鄂尔多斯市准格尔旗大路镇大沟村，东孔兑村，何家塔村境内。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 10,
+      "text": "四、项目用地面积",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 11,
+      "text": "内蒙古嘉洋科技有限公司年产8000吨电子级硅项目配套110kV供电线路工程，拟占地面积0.1148公顷。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 12,
+      "text": "按照各级文物管理要求及《内蒙古自治区文物局关于做好基本建设用地考古工作的通知》（内文物发（2025）6号）文件要求，特向贵局申请核查本项目建设用地范围内是否涉及文物保护单位，恳请贵局早日核实并出具相关审查意见。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 13,
+      "text": "特此请示。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 14,
+      "text": "附件：",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 0.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 15,
+      "text": "1.审批机关立项选址核准文件",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 0.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 16,
+      "text": "2.企业法人营业执照",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 0.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 17,
+      "text": "3.法定代表人身份证复印件",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 0.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 18,
+      "text": "4.XX项目建设项目工程建设方案",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 0.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 19,
+      "text": "5.XX项目可行性研究报告",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 0.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 20,
+      "text": "6.XX项目用地经纬度坐标Excel表",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 0.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 21,
+      "text": "7.XX项目用地范围KML格式坐标文件",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 0.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 22,
+      "text": "8.XX项目用地宗地图",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 0.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 23,
+      "text": "",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 24,
+      "text": "薛家湾供电公司[]",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 25,
+      "text": "20XX年XX月XX日",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 26,
+      "text": "",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 27,
+      "text": "联系人：XX  电话：XX",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    }
+  ],
+  "tables": [],
+  "placeholders": [
+    "XX",
+    "XX",
+    "XX",
+    "XX",
+    "XX",
+    "20XX",
+    "XX",
+    "XX",
+    "XX",
+    "XX"
+  ]
+}

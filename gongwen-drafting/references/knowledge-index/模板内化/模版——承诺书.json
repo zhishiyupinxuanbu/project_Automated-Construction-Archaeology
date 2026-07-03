@@ -1,0 +1,302 @@
+{
+  "source": "assets/templates/模版——承诺书.docx",
+  "name": "模版——承诺书",
+  "doc_type": "承诺书",
+  "generated_at": "2026-06-29 16:06:49",
+  "sections": [
+    {
+      "index": 1,
+      "page_width_cm": 21.0,
+      "page_height_cm": 29.7,
+      "top_margin_cm": 2.54,
+      "bottom_margin_cm": 2.54,
+      "left_margin_cm": 3.17,
+      "right_margin_cm": 3.17
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 1,
+      "text": "",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": 0.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": 0.0,
+      "space_after_pt": null,
+      "line_spacing": "1.0",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 2,
+      "text": "承诺书​",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": 0.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": 0.0,
+      "space_after_pt": null,
+      "line_spacing": "1.0",
+      "fonts": [
+        "方正小标宋简体"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 3,
+      "text": "",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": 0.0,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "330200",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 4,
+      "text": "本单位就建设工程文物保护行政许可相关事宜，郑重作出如下承诺：",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": 0.0,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "190500",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 5,
+      "text": "一、本单位已全面知悉工程建设文物保护行政许可的办理流程、审批层级、办理时限及申报材料等全部要求，明确知晓考古勘探报告、文物保护方案、文物影响评估方案未经法定评审、备案通过前，不得擅自开工建设。若办理行政许可手续过程中存在材料缺失情况，本单位将在项目开工前主动补足全部所需材料，确保手续合法完备。如在勘探区域内发现不可移动文物，本单位将严格遵守相关法律法规，积极履行考古发掘或原址保护的法定责任，因履行该责任导致的项目停工、线路调整等一切直接及间接损失，均由本单位自行承担。​",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": null,
+      "right_indent_pt": 0.0,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "330200",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 6,
+      "text": "二、本单位已认真学习并充分知悉《中华人民共和国文物保护法》相关规定，明确知晓“进行大型基本建设工程，建设单位应当事先报请省、自治区、直辖市人民政府文物行政部门组织从事考古发掘的单位在工程范围内有可能埋藏文物的地方进行考古调查、勘探。”“凡因进行基本建设和生产建设需要的考古调查、勘探、发掘，所需费用由建设单位列入建设工程预算。”等法定要求，并承诺严格遵照执行，保障相关费用支出。​",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "330200",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 7,
+      "text": "三、本单位清楚知悉，若未依法办理建设工程文物保护前置审查手续，擅自开工建设并对文物造成破坏的，将依法承担相应法律责任。若行为构成犯罪的，将依法承担刑事责任。因上述违法违规行为造成的一切经济损失、社会负面影响及其他法律后果，均由本单位自行承担，与相关监管部门无涉。​",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "330200",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 8,
+      "text": "四、本单位承诺，在项目施工过程中如发现地下文物，将立即停止相关区域施工，采取有效措施保护现场，防止文物损毁、流失，并在 24 小时内及时报告文物行政主管部门及公安部门处理。同时，将根据文物保护工作需要，留足充分的文物勘探、发掘等工作时间，不擅自复工或干扰文物保护工作。文物保护所需相关费用，本单位将依法承担。若因未及时上报、未有效保护现场或干扰文物保护工作导致违法违规行为发生的，一切法律责任、经济损失均由本单位承担。项目实施全过程中，本单位将自觉接受文物行政主管部门的全程监管，积极配合文物部门开展文物保护相关工作，如实提供相关资料。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "330200",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 9,
+      "text": "五、本单位承诺，若项目选址发生任何变化，将主动向文物行政主管部门重新申请办理文物保护相关许可手续。​",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "330200",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 10,
+      "text": "六、本承诺书经本单位盖章、负责人签字后生效，对本单位具有法律约束力。本单位将严格履行上述承诺，如有违反，自愿接受相关部门的监管处罚，并承担相应的法律责任。​",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "330200",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 11,
+      "text": "",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "330200",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 12,
+      "text": "项目名称：________________________​",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "330200",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 13,
+      "text": "建设单位（盖章）：________________​",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "330200",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 14,
+      "text": "法定代表人 / 负责人（签字）：________​",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "330200",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 15,
+      "text": "联系电话：________________________​",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "330200",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 16,
+      "text": "日期：______年____月____日",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": 0.0,
+      "right_indent_pt": 0.0,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "330200",
+      "fonts": [
+        "仿宋_GB2312"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 17,
+      "text": "",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "381000",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    }
+  ],
+  "tables": [],
+  "placeholders": []
+}

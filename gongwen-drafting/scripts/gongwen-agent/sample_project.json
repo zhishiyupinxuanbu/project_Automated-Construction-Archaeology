@@ -1,0 +1,14 @@
+{
+  "business_type": "文物保护许可申请",
+  "issuing_org": "内蒙古示例能源有限公司",
+  "recipient_org": "准格尔旗文物局",
+  "project_name": "示例新能源配套110千伏输电线路工程",
+  "construction_unit": "内蒙古示例能源有限公司",
+  "location": "鄂尔多斯市准格尔旗大路镇境内",
+  "scale": "新建110千伏输电线路约10公里，配套建设杆塔、光缆及相关附属设施",
+  "land_area": "0.1200公顷",
+  "approval_basis": "鄂尔多斯市能源局项目核准文件",
+  "contact": "张三",
+  "phone": "13800000000",
+  "special_notes": "请重点核查项目永久用地及施工临时用地范围。"
+}

@@ -1,0 +1,266 @@
+{
+  "source": "assets/templates/模版——XXX公司关于XXX项目用地范围内涉及XXX遗迹进行考古发掘的请示.docx",
+  "name": "模版——XXX公司关于XXX项目用地范围内涉及XXX遗迹进行考古发掘的请示",
+  "doc_type": "发掘请示",
+  "generated_at": "2026-06-29 16:06:49",
+  "sections": [
+    {
+      "index": 1,
+      "page_width_cm": 21.0,
+      "page_height_cm": 29.7,
+      "top_margin_cm": 3.7,
+      "bottom_margin_cm": 3.0,
+      "left_margin_cm": 2.8,
+      "right_margin_cm": 2.6
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 1,
+      "text": "伊金霍洛旗东博煤炭有限责任公司关于采矿许可证延续项目[]用地范围内涉及大敖包墓葬文物遗迹进行考古发掘的请示",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "宋体"
+      ],
+      "has_bold": true,
+      "has_highlight": false
+    },
+    {
+      "index": 2,
+      "text": "",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 3,
+      "text": "伊金霍洛旗文物局：",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 4,
+      "text": "伊金霍洛旗东博煤炭有限责任公司关于采矿许可证延续项目用地位于内蒙古自治区鄂尔多斯市伊金霍洛旗纳林陶亥镇毕鲁图村王家坡社，用地面积为1022.05365485公顷（折合10220536.5485平方米），建设规模为180万吨/年，建设内容为办理采矿许可证延续相关手续[]。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 5,
+      "text": "根据贵局《伊金霍洛旗文物局关于采矿许可证延续项目选址范围内文物审查意见的函》（伊文物函〔2025〕773号）确认，本项目用地范围内涉及伊金霍洛旗3处未定级不可移动文物遗址，分别为大敖包墓葬、王家坡遗址及牛家梁遗址。目前，我公司已委托第三方机构完成考古勘探工作并通过验收。经勘探结果显示，项目用地范围内共发现各类遗迹40处，包括遗址范围内21处，遗址范围外19处。具体分布情况为：大敖包墓葬范围内1处；王家坡遗址范围内17处，周边探明9处灰坑和1处墓葬；牛家梁遗址范围内3处，周边探明6处灰坑；其他区域探明2处房址和1处窑址[]。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 6,
+      "text": "依据《内蒙古自治区文物局关于做好基本建设用地考古工作的通知》（内文物发〔2025〕6号）相关规定，并结合文物影响评估结论及文物保护方案要求，为保障项目合规推进及文物保护工作落实，现申请对上述遗址开展考古发掘工作。恳请贵局向相关部门报送材料，协调组织考古发掘工作[]。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 7,
+      "text": "特此请示。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 8,
+      "text": "",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 9,
+      "text": "",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 28.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 10,
+      "text": "伊金霍洛旗东博煤炭有限责任公司",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 11,
+      "text": "2025年12月XX日",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 12,
+      "text": "",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 13,
+      "text": "",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 14,
+      "text": "",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 15,
+      "text": "附件：1.伊金霍洛旗东博煤炭有限责任公司关于采矿许可证延续项目考古调查、勘探工作报告",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "355600",
+      "fonts": [
+        "仿宋"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    }
+  ],
+  "tables": [],
+  "placeholders": [
+    "XX"
+  ]
+}
