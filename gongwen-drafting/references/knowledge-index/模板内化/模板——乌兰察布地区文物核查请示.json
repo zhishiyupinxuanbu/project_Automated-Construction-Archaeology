@@ -1,0 +1,308 @@
+{
+  "source": "assets/templates/模板——乌兰察布地区文物核查请示.docx",
+  "name": "模板——乌兰察布地区文物核查请示",
+  "doc_type": "文物保护许可申请",
+  "generated_at": "2026-06-29 16:06:49",
+  "sections": [
+    {
+      "index": 1,
+      "page_width_cm": 21.0,
+      "page_height_cm": 29.7,
+      "top_margin_cm": 3.7,
+      "bottom_margin_cm": 3.5,
+      "left_margin_cm": 2.8,
+      "right_margin_cm": 2.6
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 1,
+      "text": "关于乌兰察布地区项目名称文物核查的请示",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 20.0,
+      "line_spacing": "381000",
+      "fonts": [
+        "FZXiaoBiaoSong-B05S"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 2,
+      "text": "属地文化和旅游局：",
+      "style": "Normal",
+      "alignment": "left",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 3,
+      "text": "发文主体拟在乌兰察布市项目所在地建设项目名称。",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 4,
+      "text": "项目选址位于具体位置，建设规模为建设规模及主要建设内容。项目面积为项目面积。",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 5,
+      "text": "为依法依规办理项目建设用地范围内文物保护相关手续，加快推动项目实施，恳请贵局对该项目用地范围内是否涉及文物保护单位、不可移动文物及其保护范围、建设控制地带等情况进行核查，并出具相关审查意见。",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 6,
+      "text": "特此请示",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 7,
+      "text": "",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 8,
+      "text": "附件：1.\t项目备案告知书",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": -80.0,
+      "left_indent_pt": 112.0,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 9,
+      "text": "2.\t企业法人营业执照",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": -32.0,
+      "left_indent_pt": 112.0,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 10,
+      "text": "3.\t法定代表人身份证复印件",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": -32.0,
+      "left_indent_pt": 112.0,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 11,
+      "text": "4.\t项目可研报告",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": -32.0,
+      "left_indent_pt": 112.0,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 12,
+      "text": "5.\t空间范围及用地经纬度坐标 Excel 表",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": -32.0,
+      "left_indent_pt": 112.0,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 13,
+      "text": "6.\tKML 格式坐标文件",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": -32.0,
+      "left_indent_pt": 112.0,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 14,
+      "text": "7.\t用地宗地图",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": -32.0,
+      "left_indent_pt": 112.0,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 15,
+      "text": "（项目联系人：联系人；联系电话：联系电话）",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": 32.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 16,
+      "text": "发文主体",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 17,
+      "text": "2026年6月10日",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": 64.0,
+      "space_before_pt": 0.0,
+      "space_after_pt": 0.0,
+      "line_spacing": "355600",
+      "fonts": [
+        "STFangsong"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    }
+  ],
+  "tables": [],
+  "placeholders": []
+}

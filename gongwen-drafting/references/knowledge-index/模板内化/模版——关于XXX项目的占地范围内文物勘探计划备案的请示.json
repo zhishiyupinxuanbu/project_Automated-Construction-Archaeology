@@ -1,0 +1,260 @@
+{
+  "source": "assets/templates/模版——关于XXX项目的占地范围内文物勘探计划备案的请示.docx",
+  "name": "模版——关于XXX项目的占地范围内文物勘探计划备案的请示",
+  "doc_type": "勘探计划备案请示",
+  "generated_at": "2026-06-29 16:06:49",
+  "sections": [
+    {
+      "index": 1,
+      "page_width_cm": 21.0,
+      "page_height_cm": 29.7,
+      "top_margin_cm": 2.54,
+      "bottom_margin_cm": 2.54,
+      "left_margin_cm": 3.17,
+      "right_margin_cm": 3.17
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 1,
+      "text": "关于长呼复线—大东管道联络线项目的占地范围内文物勘探计划备案的请示",
+      "style": "Normal",
+      "alignment": "center",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 2,
+      "text": "",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 3,
+      "text": "",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 4,
+      "text": "伊金霍洛旗文物局：",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 5,
+      "text": "根据《中华人民共和国文物保护法》及《内蒙古自治区文物保护条例》有关规定，内蒙古西部天然气股份有限公司委托第三方勘探公司，计划于2026年4月对长呼复线—大东管道联络线项目占地范围开展文物勘探工作。该项目位于内蒙古自治区鄂尔多斯市伊金霍洛旗苏布尔嘎镇，总用地面积为82339平方米。鉴于项目范围内部分区域存在道路及地下管道，尚不具备全面勘探条件，本次拟考古勘探面积为37835平方米。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 6,
+      "text": "根据指导意见，现将长呼复线—大东管道联络线项目文物勘探计划随文呈报并请贵局予以审批备案。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 7,
+      "text": "此请示，请复。",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 8,
+      "text": "",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 9,
+      "text": "",
+      "style": "Normal",
+      "alignment": "justify",
+      "first_line_indent_pt": 24.0,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 10,
+      "text": "内蒙古西部天然气股份有限公司",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 11,
+      "text": "2026年4月13日",
+      "style": "Normal",
+      "alignment": "right",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": "1.5",
+      "fonts": [
+        "Times New Roman Regular"
+      ],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 12,
+      "text": "",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 13,
+      "text": "",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 14,
+      "text": "附件：",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    },
+    {
+      "index": 15,
+      "text": "长呼复线—大东管道联络线项目考古调查、勘探工作计划",
+      "style": "Normal",
+      "alignment": "inherit",
+      "first_line_indent_pt": null,
+      "left_indent_pt": null,
+      "right_indent_pt": null,
+      "space_before_pt": null,
+      "space_after_pt": null,
+      "line_spacing": null,
+      "fonts": [],
+      "has_bold": false,
+      "has_highlight": false
+    }
+  ],
+  "tables": [],
+  "placeholders": []
+}
