@@ -1,0 +1,7 @@
+interface:
+  display_name: "智能勘探工作计划"
+  short_description: "生成考古调查勘探工作计划和检查成果"
+  default_prompt: "Use $smart-prospecting-plan to 根据项目资料包生成考古调查勘探工作计划。"
+
+policy:
+  allow_implicit_invocation: true

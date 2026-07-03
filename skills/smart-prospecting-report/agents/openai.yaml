@@ -1,0 +1,7 @@
+interface:
+  display_name: "智能勘探报告"
+  short_description: "生成考古调查勘探报告和检查成果"
+  default_prompt: "Use $smart-prospecting-report to 根据项目资料包生成考古调查勘探报告。"
+
+policy:
+  allow_implicit_invocation: true

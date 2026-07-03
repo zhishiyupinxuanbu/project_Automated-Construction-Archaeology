@@ -1,0 +1,1504 @@
+{
+  "schema_version": "1.0",
+  "skill_name": "smart-prospecting-report",
+  "display_name": "智能勘探报告",
+  "version": "v1.0.1",
+  "generated_at": "2026-07-03T15:17:48+08:00",
+  "purpose": "Standalone smart prospecting report generation skill package",
+  "default_final_output_dir": "~/Desktop",
+  "runtime_output_policy": "Use current working directory under 过程资料/项目名称 for process artifacts; never write into the source-material folder.",
+  "manifest_excludes": [
+    "MANIFEST.json",
+    "__pycache__/",
+    "*.pyc",
+    ".DS_Store",
+    ".env.local",
+    "~$*"
+  ],
+  "maintenance_rule": "After changing scripts, references, templates, or assets, update VERSION, CHANGELOG.md, DEVELOPMENT_LOG.md, regenerate MANIFEST.json, and run self_test_skill.py plus verify_manifest.py.",
+  "file_count": 247,
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "category": "metadata",
+      "size_bytes": 1209,
+      "sha256": "24ba015c9d0448c9538cad3f676ac98e9fb7af7bf41115dabfe73d39bdbc5848"
+    },
+    {
+      "path": "DEVELOPMENT_LOG.md",
+      "category": "metadata",
+      "size_bytes": 2377,
+      "sha256": "3701c90e5fe3be07f75d81335b1520f036220fb6d85ae98997ef6c16ce923ba2"
+    },
+    {
+      "path": "SKILL.md",
+      "category": "metadata",
+      "size_bytes": 5873,
+      "sha256": "61f6ca2a88b07ca2d8a128d325833a73b00566719b2fa7d0a25275ea0f9a8f17"
+    },
+    {
+      "path": "VERSION",
+      "category": "metadata",
+      "size_bytes": 7,
+      "sha256": "145aabe1106cd123b7123194b94bcf8bff4442caf1c5336c3e2c9c671f4895ca"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "category": "metadata",
+      "size_bytes": 268,
+      "sha256": "0898dc992309639a3ba90bfee435342006644550aea58ae8885eb56869b778fb"
+    },
+    {
+      "path": "assets/company-personnel-library/README.md",
+      "category": "asset",
+      "size_bytes": 1255,
+      "sha256": "423470e636b152763bbf18cfb56684e9d8156acb59b6e3ecf4d8e30ae727fd18"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/README.md",
+      "category": "asset",
+      "size_bytes": 907,
+      "sha256": "92db9dc97c7c209a0b9209ef31ce6566d79160a86dd5e807cc9048b790a329c1"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/三门峡市文物考古勘探有限公司_资料卡.xlsx",
+      "category": "asset",
+      "size_bytes": 15176,
+      "sha256": "e8636ca91f0893dbfcc09565571b9c16e873a902ccc4357522639d4d258b7399"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/孙增伟/劳动合同/孙增伟_劳动合同_第1页.jpeg",
+      "category": "asset",
+      "size_bytes": 100297,
+      "sha256": "82742d6d6ab2462db83fd2a8eee0cfa0db156b557ad740658d4ae26c306c4070"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/孙增伟/劳动合同/孙增伟_劳动合同_第2页.jpeg",
+      "category": "asset",
+      "size_bytes": 176583,
+      "sha256": "03e70fe6865e83ba5ad24d436ade3994cab44d9462063313692936728839a87f"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/孙增伟/劳动合同/孙增伟_劳动合同_第3页.jpeg",
+      "category": "asset",
+      "size_bytes": 204883,
+      "sha256": "1a98aa7206b51acff9522a3dfc1b2c8aab966d993303759ac111ed5a6e8aa3e6"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/孙增伟/劳动合同/孙增伟_劳动合同_第4页.jpeg",
+      "category": "asset",
+      "size_bytes": 130595,
+      "sha256": "b2911d7a8d57437aa3bcefe08ce3a44a7a398d64c6221e5052da60ce549d8ed1"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/孙增伟/社保/孙增伟_社保证明.png",
+      "category": "asset",
+      "size_bytes": 402308,
+      "sha256": "0884fcc5723dc093ca688d3ec52b4d4128a281bdc1ee1553b93586ae25744971"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/孙增伟/证书/孙增伟_证书.png",
+      "category": "asset",
+      "size_bytes": 683734,
+      "sha256": "f3c5e7bd9f4fe28d999df9ed425a0362d009ff7aaf2179c4f14618ff6b4257e3"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/孙增伟/身份证/孙增伟_身份证正面.png",
+      "category": "asset",
+      "size_bytes": 245764,
+      "sha256": "b5c5099f1542dabea3ee878ba1b0a35bcf3c67efc291ba26c76d3c9e2bdc7cf1"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/孙增伟/身份证/孙增伟_身份证背面.png",
+      "category": "asset",
+      "size_bytes": 244020,
+      "sha256": "4b1628fb82e1060a138267cfd55a1f2ceb049de2d3f898349b796f0954c277a9"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/尚红波/劳动合同/尚红波_劳动合同_第1页.jpeg",
+      "category": "asset",
+      "size_bytes": 68774,
+      "sha256": "745741ac468dd2f10880ce19948b9c4ae6012d36e3e2ead887b69beb93a93c63"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/尚红波/劳动合同/尚红波_劳动合同_第2页.jpeg",
+      "category": "asset",
+      "size_bytes": 141891,
+      "sha256": "cc8e0a12113b480b7c38b612765ba0ac3d6fa2e046fb81141590452a18eda061"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/尚红波/劳动合同/尚红波_劳动合同_第3页.jpeg",
+      "category": "asset",
+      "size_bytes": 84630,
+      "sha256": "9475ffc4ca5658db04b06ddae4c58c9b16cf0c6e1d2ccb5805af0dd568f3a089"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/尚红波/社保/尚红波_社保证明.png",
+      "category": "asset",
+      "size_bytes": 402923,
+      "sha256": "8c5c2617da421a147ac2e504b9b16adb2973a6f8121681a4e4fc18abeba35714"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/尚红波/证书/尚红波_证书.png",
+      "category": "asset",
+      "size_bytes": 695472,
+      "sha256": "50a7b7bdc2fff03715f5bbdcd736faa87fbe119a9589589f7217447f3725d799"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/尚红波/身份证/尚红波_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 33740,
+      "sha256": "76fd270043332c4f3cf773faa6d76de62ebc6b539d38bfe294f326c424f20c59"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/尚红波/身份证/尚红波_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 31515,
+      "sha256": "6749b2d79c0d84f7515c46923d62a5c66f8fd742e7349898790178a0ef29de0f"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/张龙龙/劳动合同/张龙龙_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 860697,
+      "sha256": "d0cfb778d7faef0dea2b6c1d7a477cb754a05ae586d561f0a8107481895c20b0"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/张龙龙/劳动合同/张龙龙_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 852335,
+      "sha256": "f23836b2cf957f1dab53600251f087b9e86dd13b7e5e341f30753b11edeaafcc"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/张龙龙/劳动合同/张龙龙_劳动合同_第3页.png",
+      "category": "asset",
+      "size_bytes": 1003865,
+      "sha256": "cb6baa0413aa3f78c316460ab1b123e4611ee2e4b2ff44e44c89fb92cc774926"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/张龙龙/劳动合同/张龙龙_劳动合同_第4页.png",
+      "category": "asset",
+      "size_bytes": 784105,
+      "sha256": "48f82a44d4a9eab3b54cee9650300359e3d85dd1cc4cc964593445ea1203f688"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/张龙龙/社保/张龙龙_社保证明.png",
+      "category": "asset",
+      "size_bytes": 444898,
+      "sha256": "2a1c171ea8371143cdb678804cbced8fbedbedc5112d5ae81a17f912a87eeac5"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/张龙龙/证书/张龙龙_证书.jpeg",
+      "category": "asset",
+      "size_bytes": 142491,
+      "sha256": "3dc422cd2d70b8aebb707a4a5d690939a5660fb996217ea2cb7db69b8fdc111b"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/张龙龙/身份证/张龙龙_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 60155,
+      "sha256": "3531456750537b974dadf27b53c076a6be3b537a0f2703d0463dd75f57efcf80"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/张龙龙/身份证/张龙龙_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 59213,
+      "sha256": "8ecbd3729a891bc4a489ddfb24a1f96b6bb578ccefefbba9d5cf91d872ffad6a"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/贺欢/劳动合同/贺欢_劳动合同_第1页.jpeg",
+      "category": "asset",
+      "size_bytes": 67779,
+      "sha256": "04abc3a214611d76c2cbdd401f3a198b1519132a12a75ab35471bfefe9909799"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/贺欢/劳动合同/贺欢_劳动合同_第2页.jpeg",
+      "category": "asset",
+      "size_bytes": 139449,
+      "sha256": "1728af680f30bef38eb668300eb7e24c22d6db979fb50c595398f5813e00862a"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/贺欢/劳动合同/贺欢_劳动合同_第3页.jpeg",
+      "category": "asset",
+      "size_bytes": 85680,
+      "sha256": "ec55b8c0872fae8ee45b6e6abc250f2223330c6d5f7d4c86393e25a0f535b4ad"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/贺欢/社保/贺欢_社保证明.png",
+      "category": "asset",
+      "size_bytes": 391952,
+      "sha256": "6f3804ebb2a1a11c130556a54854d2b4aebb264dec2fe0b1f776a0b76e9982ca"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/贺欢/证书/贺欢_证书.png",
+      "category": "asset",
+      "size_bytes": 664331,
+      "sha256": "3020e731dae9d28a0bc7954226df2fd08124da3371563d571a13e24894494cfe"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/贺欢/身份证/贺欢_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 32110,
+      "sha256": "bb0f3bcab207423ec4612a067775fd43ee9ccac80244609eca5e25215e66c056"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/贺欢/身份证/贺欢_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 29211,
+      "sha256": "74af2a47c84b0e0553ec9ac0a0eaf581c165312b67ab0ab8a74efcffd6adcb72"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/邢德昌/劳动合同/邢德昌_劳动合同_第1页.jpeg",
+      "category": "asset",
+      "size_bytes": 72867,
+      "sha256": "741646456ec31b91edd546930f3017ec31815cc8dcc5ff26061119308d8a07da"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/邢德昌/劳动合同/邢德昌_劳动合同_第2页.jpeg",
+      "category": "asset",
+      "size_bytes": 148317,
+      "sha256": "59c69e2679f16dfdd333d9c0f495161f63d86e0f09208d1c21c825af09312481"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/邢德昌/劳动合同/邢德昌_劳动合同_第3页.jpeg",
+      "category": "asset",
+      "size_bytes": 86044,
+      "sha256": "8e2a8ecada440b97dc26156d9c23d79ef99047c42810415fe632350ba1955746"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/邢德昌/社保/邢德昌_社保证明.png",
+      "category": "asset",
+      "size_bytes": 458868,
+      "sha256": "c3ce67c386c1f6b33e06fc042e8f4e6ac7a5611e381311924c64b7e425303643"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/邢德昌/证书/邢德昌_证书.png",
+      "category": "asset",
+      "size_bytes": 680176,
+      "sha256": "cbab89be202d8a573b59ef33ba9e1e2409465a73e283f222b51a2c08c782dbed"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/邢德昌/身份证/邢德昌_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 49289,
+      "sha256": "9b6ae410e46d520810d4dab8e70309930e4f1094f1a969482d6711521e5719e7"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/邢德昌/身份证/邢德昌_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 43240,
+      "sha256": "35592acd031eec73b4dde314047b6c45c03f0571dc90901246aed710574ad88e"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/陈建峰/劳动合同/陈建峰_劳动合同_第1页.jpeg",
+      "category": "asset",
+      "size_bytes": 67271,
+      "sha256": "baad2d68ddf30d00c349872330eeac89f646bb1ac077d55149404cb0382f16a1"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/陈建峰/劳动合同/陈建峰_劳动合同_第2页.jpeg",
+      "category": "asset",
+      "size_bytes": 140418,
+      "sha256": "5a058dfb8721346eecc29f94e3456b8294e0ba48480bfa82b3e08b1951adf2ce"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/陈建峰/劳动合同/陈建峰_劳动合同_第3页.jpeg",
+      "category": "asset",
+      "size_bytes": 84533,
+      "sha256": "ad88214a124ee4cba8f850745d64172323ece55274800d21bd1681004ba9785c"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/陈建峰/社保/陈建峰_社保证明.png",
+      "category": "asset",
+      "size_bytes": 422708,
+      "sha256": "b57ce383974816a53848f43b9f9d4ce8b5707d39cd7be11a77c6d65a3e9a9c90"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/陈建峰/证书/陈建峰_证书.jpeg",
+      "category": "asset",
+      "size_bytes": 184803,
+      "sha256": "6d8bcf46a5e950ef82e92b5df022b077d9ba5247810654bb04285d62118267fc"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/陈建峰/身份证/陈建峰_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 34590,
+      "sha256": "af3b1459c4e831b45c092cba09a6c2e9c2242273744cdea2088696929dd9a0ac"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/人员信息库/陈建峰/身份证/陈建峰_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 33665,
+      "sha256": "1e21f1d43d7be2abb39ac585b14d333b6019eddd2bb3a74f203aeca1f37206f5"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/公司信息库/公司印章.png",
+      "category": "asset",
+      "size_bytes": 133572,
+      "sha256": "1718bb89a68c75da1bcfdbc0da1f2b3436f9515e222e1e312d2d190a3e52d686"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/公司信息库/公司附件图片清单.tsv",
+      "category": "asset",
+      "size_bytes": 418,
+      "sha256": "4a34ef91c8ad277ef7694a2975717c0894ecd6fed8f83af4e864ccf51cd8eb4e"
+    },
+    {
+      "path": "assets/company-personnel-library/三门峡市文物考古勘探有限公司/公司信息库/营业执照.jpeg",
+      "category": "asset",
+      "size_bytes": 423726,
+      "sha256": "a7103fe2caf33b7f45fe7a7b866dba805477c9eb8cf214e2e92c4077b46b84d9"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/README.md",
+      "category": "asset",
+      "size_bytes": 901,
+      "sha256": "db6a4942ab8182042eb66dd59afad007fface0f46ce04e9f5ca0d229797cab01"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/刘治国/劳动合同/刘治国_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 401493,
+      "sha256": "2cc3c97fe09db2c0c409133b2c53f7c0eca7ef172148517e35097a46061ef32c"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/刘治国/劳动合同/刘治国_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 422005,
+      "sha256": "0b8329a7763507c5852f0e32cb4b589eb4bd4adf5962046604bf9416aae2088f"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/刘治国/劳动合同/刘治国_劳动合同_第3页.png",
+      "category": "asset",
+      "size_bytes": 519296,
+      "sha256": "5bda385357bdf77981cb935701bb3d988955ab0cbfc7d0dece22c599e13af732"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/刘治国/社保/刘治国_社保证明.png",
+      "category": "asset",
+      "size_bytes": 389102,
+      "sha256": "3fed53e03a492ba81161d889e1e5a55bb53412da355aacbc59e9c8e44f600c96"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/刘治国/证书/刘治国_证书.png",
+      "category": "asset",
+      "size_bytes": 1230630,
+      "sha256": "39b72d84ddf6853dad78e4ad6ee5fcf40bca3f4de4c68431117c02d821abaf8a"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/刘治国/身份证/刘治国_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 59353,
+      "sha256": "fa7ad086282751994e12dc93a8f37fdef84ba2dd389d8cf30b9c5b55a5ede6c1"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/刘治国/身份证/刘治国_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 56574,
+      "sha256": "483db64906edd948e06caf1229ef0082cee42ac4280baeb17ade9609683aa244"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/张跃飞/劳动合同/张跃飞_劳动合同_第1页.jpeg",
+      "category": "asset",
+      "size_bytes": 164213,
+      "sha256": "e848e5e5312b8bddd9761402dbc236ae40c47eccdd70cc90621b866c9dc92a1e"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/张跃飞/劳动合同/张跃飞_劳动合同_第2页.jpeg",
+      "category": "asset",
+      "size_bytes": 170104,
+      "sha256": "56cf29cd8ce25008b15f8e78aedae233abe535a28e460c432da224dc8301ade8"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/张跃飞/劳动合同/张跃飞_劳动合同_第3页.jpeg",
+      "category": "asset",
+      "size_bytes": 157425,
+      "sha256": "2dd7b4f831089c6ac246f27dfee5a0c176d76f31de83ad80c94956cc8122f92e"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/张跃飞/社保/张跃飞_社保证明.png",
+      "category": "asset",
+      "size_bytes": 1099156,
+      "sha256": "a29ca4e633f383c0b963c99417a0f9af3dcb3911998927cd48f8bb83f290bd58"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/张跃飞/证书/张跃飞_证书.png",
+      "category": "asset",
+      "size_bytes": 1179123,
+      "sha256": "e25547536a2cf0862193d4c16857301dffa866b4460559007a461319d50b5b9c"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/张跃飞/身份证/张跃飞_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 45998,
+      "sha256": "b939749c5c207d9990f875b933fec5a76630c5efc90e8785c71cfc97837ed2c2"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/张跃飞/身份证/张跃飞_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 42682,
+      "sha256": "5a80a931be315cc710380baf52f5f68c036143f1c05d87e0580696e66f0487c0"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李娜/劳动合同/李娜_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 352681,
+      "sha256": "c5c2b96b739273040cabbd6e7adde9c3389b70688d008a54bf364d00236ae144"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李娜/劳动合同/李娜_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 364432,
+      "sha256": "85b0602abd0476695367e4f77ab2472b62c0fcaaf2e63fb42607d324f002f357"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李娜/劳动合同/李娜_劳动合同_第3页.png",
+      "category": "asset",
+      "size_bytes": 397278,
+      "sha256": "fcd28804ea609d5d9e980202ca6a99bc0a60ead2319669fe9f76a1df146aa869"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李娜/社保/李娜_社保证明.png",
+      "category": "asset",
+      "size_bytes": 380124,
+      "sha256": "a6dc003680bda4633bfd25f1464337ee5553300aa9057c2748fbe7c146a84948"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李娜/证书/李娜_证书.png",
+      "category": "asset",
+      "size_bytes": 1214359,
+      "sha256": "3527706efb805feb479959cd6ee0be93d11f4aedb7307660bd819a2502e14646"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李娜/身份证/李娜_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 62593,
+      "sha256": "8055bd598011c773eb828938cfe6330e487ae099fe103b07e343893ee27a11f6"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李娜/身份证/李娜_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 67434,
+      "sha256": "1406df48b8b39a3c9b39fe07e2bc2bb67e7555d57bd2c82a7ba518fd93716b96"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李潜林/劳动合同/李潜林_劳动合同_第1页.jpeg",
+      "category": "asset",
+      "size_bytes": 162772,
+      "sha256": "6f7bb9b2069c6748afb151ff14c68b0e34d8f75c08a0e9740f2ce1720fab749f"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李潜林/劳动合同/李潜林_劳动合同_第2页.jpeg",
+      "category": "asset",
+      "size_bytes": 167762,
+      "sha256": "1a8a577af0463948383c82fc273ab2756de1a074cdaabfa4b3c308f40d7639a7"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李潜林/劳动合同/李潜林_劳动合同_第3页.jpeg",
+      "category": "asset",
+      "size_bytes": 166789,
+      "sha256": "068c8e4fb5d931a3114d516466b35b4926fca995f7335afb3257b9cf926874a3"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李潜林/社保/李潜林_社保证明.png",
+      "category": "asset",
+      "size_bytes": 255874,
+      "sha256": "8b3cdce5ee0186011d0e3e4c7a60574aa47d1d2983c942f2a1b931eac5d8d7fc"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李潜林/证书/李潜林_证书.png",
+      "category": "asset",
+      "size_bytes": 1535127,
+      "sha256": "f955f988bf094880e07815e0e1edb3a4e0f02e71d9e5db016e163816aa1a65e6"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李潜林/身份证/李潜林_身份证正面.png",
+      "category": "asset",
+      "size_bytes": 1138457,
+      "sha256": "198b5a946c3ecc67890dfa9ee137f36c6565b4b452567155ae86f1016238c04c"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/李潜林/身份证/李潜林_身份证背面.png",
+      "category": "asset",
+      "size_bytes": 1124653,
+      "sha256": "ad6294ef3674db43abc9f8c3449aa011abe44d0614efc6e1ddfffab586c351ad"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/林伟明/劳动合同/林伟明_劳动合同_第1页.jpeg",
+      "category": "asset",
+      "size_bytes": 162401,
+      "sha256": "927986b99e4918534d94f095c591b15826b5472671971e41baf90b9b2b6935dd"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/林伟明/劳动合同/林伟明_劳动合同_第2页.jpeg",
+      "category": "asset",
+      "size_bytes": 165523,
+      "sha256": "a46de0c6fd7f06c239f910ad972501ce191e73b72f47c10e806b50a8e400659c"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/林伟明/劳动合同/林伟明_劳动合同_第3页.jpeg",
+      "category": "asset",
+      "size_bytes": 178012,
+      "sha256": "eaaa03c5b5c7ea27a60f5a10c6b0d81ada4132d05734b8c5d0a88251398e42d4"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/林伟明/社保/林伟明_社保证明.png",
+      "category": "asset",
+      "size_bytes": 1089552,
+      "sha256": "483cf9ceac94aff24b737ed661b237c30d24af500de3e86375ef6cd44d7562d5"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/林伟明/证书/林伟明_证书.png",
+      "category": "asset",
+      "size_bytes": 671044,
+      "sha256": "59995e752e3ccbb5623cdb351853c31025779f6f0a34f4451bb3f05bef0500cf"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/林伟明/身份证/林伟明_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 82357,
+      "sha256": "83a9f8bee2e66e8204b37e0a66e808fc8f0f3a7efb203a6537906c671b401a24"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/林伟明/身份证/林伟明_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 74229,
+      "sha256": "77c8eda77c6269a5d91738c90819932a0938a252a6e77033436173a864eb3f90"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/董淑娴/劳动合同/董淑娴_劳动合同_第1页.jpeg",
+      "category": "asset",
+      "size_bytes": 162966,
+      "sha256": "e852bb2e2b2fd6d05562ab0735faf98a86a197029ce6b95ce615963dfcd9f3a4"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/董淑娴/劳动合同/董淑娴_劳动合同_第2页.jpeg",
+      "category": "asset",
+      "size_bytes": 158940,
+      "sha256": "2084102a57212d986a26e2c2b8fdcfcfd02945c9f44dd231b3106ae227163e5c"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/董淑娴/劳动合同/董淑娴_劳动合同_第3页.jpeg",
+      "category": "asset",
+      "size_bytes": 151536,
+      "sha256": "e031a51e9b6e2255e178f92ea8f6ff0b91a23e8521d3ecc72508ea104c0856bd"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/董淑娴/社保/董淑娴_社保证明.png",
+      "category": "asset",
+      "size_bytes": 1091726,
+      "sha256": "258c38af6e4d4599784bb5c48733d0c6a9d6712f641a8a6b3c13ca4c28347a82"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/董淑娴/证书/董淑娴_证书.png",
+      "category": "asset",
+      "size_bytes": 363823,
+      "sha256": "14488a5b1e92681c677f1668481306c2ecdc764368399d7d73194da36a3e854d"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/董淑娴/身份证/董淑娴_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 109252,
+      "sha256": "aa0c04351eaba08dee41619274b95a7a19903d3ee5a3f2f4f23f0f2effdf90b2"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/人员信息库/董淑娴/身份证/董淑娴_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 86578,
+      "sha256": "c8f3c14dfe874cf3c64b03a5b1cf8437ddfbfb6744489e3b6db26361b24c05b5"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/公司信息库/公司印章.png",
+      "category": "asset",
+      "size_bytes": 136441,
+      "sha256": "e093a29730f335e4e54627d81cd4e7086116bef7415336aedb98162561a6c4b2"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/公司信息库/公司资质.png",
+      "category": "asset",
+      "size_bytes": 127923,
+      "sha256": "9dc3b071b665a7572d5175ff6aeb1abeb2ce8db26cb0c1e88ef65a8c8983ee60"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/公司信息库/公司附件图片清单.tsv",
+      "category": "asset",
+      "size_bytes": 541,
+      "sha256": "35065de6af42d917df12ba466d459344aa7b624c31304ca01f1f03ee18564dd8"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/公司信息库/营业执照.jpeg",
+      "category": "asset",
+      "size_bytes": 218088,
+      "sha256": "6d23e6f0f923292a69f0d3367a7ba430e755ba2bf50bf6604d3b7a42b28cd3cf"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古峰驰考古勘探有限公司/内蒙古峰驰考古勘探有限公司_资料卡.xlsx",
+      "category": "asset",
+      "size_bytes": 15718,
+      "sha256": "de1c7eeb2bfa4f164624d7fc16a07b0c55e737f7809d1bc513ef7473871b6fe5"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/README.md",
+      "category": "asset",
+      "size_bytes": 901,
+      "sha256": "ee267f73ca473af8085de6667ebfbfe3e1359037794de63d4c454d1f4acbb2de"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/何家乐/劳动合同/何家乐_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 326240,
+      "sha256": "71f434d44222fadc3fb1e17d2da46d24b8e13bd527a007ca1a00bfe35330d639"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/何家乐/劳动合同/何家乐_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 348034,
+      "sha256": "fbc44c936213df4c09129cc1da80350bad3e9943329edcbeeeb8fb77df30a0d8"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/何家乐/劳动合同/何家乐_劳动合同_第3页.png",
+      "category": "asset",
+      "size_bytes": 321995,
+      "sha256": "2233ebc10f97732f05c69d0dcea9511786a4cac0ed1754c06df9b266995dd705"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/何家乐/社保/何家乐_社保证明.png",
+      "category": "asset",
+      "size_bytes": 370581,
+      "sha256": "d54e22c302ebb3ca702b3f8dff91a7b5d4f788a207ba990e373a141a11db0690"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/何家乐/证书/何家乐_证书.png",
+      "category": "asset",
+      "size_bytes": 815601,
+      "sha256": "c4ee8626485ba41a629dccb969615b2bde9207f3cb771295e7fec871283b9371"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/何家乐/身份证/何家乐_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 51171,
+      "sha256": "fce4268e6a355bb538eedcae699068ba229858175dadcadf4abf288a249fe738"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/何家乐/身份证/何家乐_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 44672,
+      "sha256": "9ea59ff145899edb6ef050223e82850627a3096c22ab11717907cca87d168b6e"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/刘露/劳动合同/刘露_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 358485,
+      "sha256": "2d1aaf61e16b6cb190403945687873a82d406ab0570a1744ca5f60f997d3a5b3"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/刘露/劳动合同/刘露_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 401043,
+      "sha256": "a1cb04344216a883f090e9ee34bddc8ce1f42a93536e0ac6be560435b9ba168c"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/刘露/劳动合同/刘露_劳动合同_第3页.png",
+      "category": "asset",
+      "size_bytes": 125681,
+      "sha256": "79ce35bdbb2c98ba24b72cb2dbbe661ee20001418cf95aa0c47d395da8c2699b"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/刘露/社保/刘露_社保证明.png",
+      "category": "asset",
+      "size_bytes": 368680,
+      "sha256": "0d19d81c3ff5933c7df85338fd34c16b9db6811265078b1da699932b830f8afb"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/刘露/证书/刘露_证书.png",
+      "category": "asset",
+      "size_bytes": 1222287,
+      "sha256": "e66937bed48df272609866f6d5a25e307c7f7da507046aa66cb102b0f154717f"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/刘露/身份证/刘露_身份证正面.png",
+      "category": "asset",
+      "size_bytes": 206555,
+      "sha256": "e2915c841c8131dde8c1ca0bb1c71d5709eb381c66d18545b8d1e88c49af56a5"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/刘露/身份证/刘露_身份证背面.png",
+      "category": "asset",
+      "size_bytes": 221892,
+      "sha256": "518e982af4added6523c78e6c7a26b6a867044e72821a37a55c15dc03bdc4012"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/张听/劳动合同/张听_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 412503,
+      "sha256": "d9a48b1993b7dcaf6c9268204b174239f4018d0e447d4bba3bc948af94909b59"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/张听/劳动合同/张听_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 402578,
+      "sha256": "437b3b56df4148fddd8b4a341b66d7c4836ae1de7ddb4e193e77b73e56e682ae"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/张听/劳动合同/张听_劳动合同_第3页.png",
+      "category": "asset",
+      "size_bytes": 336776,
+      "sha256": "fc231a1815293c5dc414216693e49f1461c8b2ef34766f2e6f748f9afb614823"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/张听/社保/张听_社保证明.png",
+      "category": "asset",
+      "size_bytes": 370208,
+      "sha256": "8006f8a159c49288dd1d8d291b8735335ff5413ae0c263ae53007d26fe665d2e"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/张听/证书/张听_证书.png",
+      "category": "asset",
+      "size_bytes": 720726,
+      "sha256": "89dad18a469378043d77aacb354b1813112749865ddddd00ba109e53219a3646"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/张听/身份证/张听_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 40641,
+      "sha256": "ebfa8e734b5b08b1df2e905ba9f8641fce395b4e070828cc80ee76634a54dc4a"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/张听/身份证/张听_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 46899,
+      "sha256": "ffb051d48297baea24bda80f9927a8dbbab23ab5b35f1f1d518545232dfa5a9a"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/王一凡/劳动合同/王一凡_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 425337,
+      "sha256": "549e0b546613ed5599de3cc6e73baf9de468ba6ac6f5f48ede5457903fa5025f"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/王一凡/劳动合同/王一凡_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 387834,
+      "sha256": "5840b5422b32c6ebea291cc0a7791cffda93ec110a0c29f4d8f6b6aa28df86b0"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/王一凡/劳动合同/王一凡_劳动合同_第3页.png",
+      "category": "asset",
+      "size_bytes": 324022,
+      "sha256": "e8858949c1be3be57f6fda7a1f8551dfee34de37dcea3489c3d26a6cdc188fa8"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/王一凡/社保/王一凡_社保证明.png",
+      "category": "asset",
+      "size_bytes": 367155,
+      "sha256": "e98ef15e51f1156a6c50f2a2f843943e4797af0d79a0e59838b90ae3a92b2c61"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/王一凡/证书/王一凡_证书.png",
+      "category": "asset",
+      "size_bytes": 1355689,
+      "sha256": "70bff9df0d1338be1f376248fddf3bd6eddc53f47a8db9aa2f5064679296b8c7"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/王一凡/身份证/王一凡_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 214181,
+      "sha256": "e6a7da1fe79fccb6cccc3c682cc46876fe2eaad39672ba37d9bdd346bbf4deee"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/王一凡/身份证/王一凡_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 177977,
+      "sha256": "c851a76074c0de5be0d9b63c6df989260b7d782dd059a7b865a11544454abb12"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/郭晴凯/劳动合同/郭晴凯_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 373407,
+      "sha256": "0c8c6088fa781be09e9faa28dc962828a07044db274d967aad1ac1d81a5723b1"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/郭晴凯/劳动合同/郭晴凯_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 405655,
+      "sha256": "cafc243e0f3599a1d210e57f355b126409195a65710ec0c7296693c9de5dcf67"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/郭晴凯/劳动合同/郭晴凯_劳动合同_第3页.png",
+      "category": "asset",
+      "size_bytes": 346567,
+      "sha256": "9e56263b0e2ab3c88708dc13674c65f9133480be9d2d25626f3ec704b707ac59"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/郭晴凯/社保/郭晴凯_社保证明.png",
+      "category": "asset",
+      "size_bytes": 396130,
+      "sha256": "ce97a9640de14b168487d327d24b851436c36e318ea4467431f66b43a30d889c"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/郭晴凯/证书/郭晴凯_证书.png",
+      "category": "asset",
+      "size_bytes": 1003382,
+      "sha256": "0e95edf410b87e3e398147d2886aca57c435b10a26c921158b46eaeb14ee46eb"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/郭晴凯/身份证/郭晴凯_身份证正面.png",
+      "category": "asset",
+      "size_bytes": 372660,
+      "sha256": "4444422dafdc6c6f81b5cdd969065bb3330fd1858e0630be6fe29561f76c4067"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/郭晴凯/身份证/郭晴凯_身份证背面.png",
+      "category": "asset",
+      "size_bytes": 354385,
+      "sha256": "970a1f9c4ada09a53dad98f372caef28aacd69887a63d1e0e84ddf9889ddf7a4"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/魏士琪/劳动合同/魏士琪_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 367833,
+      "sha256": "433e7249e2c17793b0318b00b866ff8ca97a1b1ec247d167c3aeaaae7f50be6e"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/魏士琪/劳动合同/魏士琪_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 396716,
+      "sha256": "ca890599d3d273470d7eb0b345cdfcf7b09d17d461b68368133f1ba2dca7b7c5"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/魏士琪/劳动合同/魏士琪_劳动合同_第3页.png",
+      "category": "asset",
+      "size_bytes": 352730,
+      "sha256": "bae0b584a426f04ff57a36b0858cc0c8f172af680d8d167a57de9afe914dde61"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/魏士琪/社保/魏士琪_社保证明.png",
+      "category": "asset",
+      "size_bytes": 355165,
+      "sha256": "6beac35b4d7fd349434ee74820e60a4d0831ce56e059a88ce6b4aacd1146cec9"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/魏士琪/证书/魏士琪_证书.png",
+      "category": "asset",
+      "size_bytes": 1003723,
+      "sha256": "58f2e43a083d290617c09cd034a033dcafb02e33456464913f704520cb568ea9"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/魏士琪/身份证/魏士琪_身份证正面.png",
+      "category": "asset",
+      "size_bytes": 2536193,
+      "sha256": "289299a311399e859a4ddb9e0464d661ca8301dcf10ad03eebf155eeeb03a85f"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/人员信息库/魏士琪/身份证/魏士琪_身份证背面.png",
+      "category": "asset",
+      "size_bytes": 1630106,
+      "sha256": "43b440121bacb41b5485e7bc6d7cd3ee30bb51377757fab4bb4a6d1400dab058"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/公司信息库/公司印章.png",
+      "category": "asset",
+      "size_bytes": 139934,
+      "sha256": "dd6de21b079ab5444110075c0bc39bb155597ff00a293f7a7da0c09aa9009940"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/公司信息库/公司资质.png",
+      "category": "asset",
+      "size_bytes": 127923,
+      "sha256": "9dc3b071b665a7572d5175ff6aeb1abeb2ce8db26cb0c1e88ef65a8c8983ee60"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/公司信息库/公司附件图片清单.tsv",
+      "category": "asset",
+      "size_bytes": 541,
+      "sha256": "ef86b8b5b6aee180304db1bc226277cb204e32dfbb49fc81e761cf16f2a5f08a"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/公司信息库/营业执照.jpeg",
+      "category": "asset",
+      "size_bytes": 371637,
+      "sha256": "3013fffdd214cbb23d054cd12b100bfd2d1b723baa86a7c7db0332649db27f19"
+    },
+    {
+      "path": "assets/company-personnel-library/内蒙古煊迹考古勘探有限公司/内蒙古煊迹考古勘探有限公司_资料卡.xlsx",
+      "category": "asset",
+      "size_bytes": 15336,
+      "sha256": "6b10f14cf8b77afc93f91377a40c0899cef08316f431a0aa0711c307e4eb683b"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/README.md",
+      "category": "asset",
+      "size_bytes": 897,
+      "sha256": "1d8d186d2f39dcff1749115f3256a1a8ea225e12255caedc17de6a98654690be"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/张听/劳动合同/张听_劳动合同_第1页.jpeg",
+      "category": "asset",
+      "size_bytes": 174210,
+      "sha256": "7a233434fe09733c8c3ee2f3945af2d716a1d673df08be515e62aa36bb39c564"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/张听/劳动合同/张听_劳动合同_第2页.jpeg",
+      "category": "asset",
+      "size_bytes": 150868,
+      "sha256": "d87fcea63ca2ac073bc764b37a0f60b4056aabd165c360839cb8b2a451b7db06"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/张听/社保/张听_社保证明.jpeg",
+      "category": "asset",
+      "size_bytes": 174409,
+      "sha256": "3298ac6d5770802759b5e0efbaaebd4f0a87cd76b90f8973a656cbfe482ab32d"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/张听/证书/张听_结业证书.png",
+      "category": "asset",
+      "size_bytes": 720726,
+      "sha256": "89dad18a469378043d77aacb354b1813112749865ddddd00ba109e53219a3646"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/张听/身份证/张听_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 40641,
+      "sha256": "ebfa8e734b5b08b1df2e905ba9f8641fce395b4e070828cc80ee76634a54dc4a"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/张听/身份证/张听_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 46899,
+      "sha256": "ffb051d48297baea24bda80f9927a8dbbab23ab5b35f1f1d518545232dfa5a9a"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/曹梦林/劳动合同/曹梦林_劳动合同_第1页.jpeg",
+      "category": "asset",
+      "size_bytes": 166630,
+      "sha256": "cd9998a8e5898f2f2d552add27ee1248f1847d722c3b5b666f953694a06a5f21"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/曹梦林/劳动合同/曹梦林_劳动合同_第2页.jpeg",
+      "category": "asset",
+      "size_bytes": 161670,
+      "sha256": "6fc816fe4e4dd254e9fdbf1f01249a8c98e536873536c2bc52913bd376708c4d"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/曹梦林/社保/曹梦林_社保证明.jpeg",
+      "category": "asset",
+      "size_bytes": 174452,
+      "sha256": "06f8f15966acce09def70f0a5acf4a0e3236bfdba47da5352745cbb4c2b4007d"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/曹梦林/证书/曹梦林_结业证书.png",
+      "category": "asset",
+      "size_bytes": 847053,
+      "sha256": "4c625b3935058e9f3e3b3392fc800f04a2c3bb39a0b1706a32e76bcb8d179bc0"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/曹梦林/身份证/曹梦林_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 65055,
+      "sha256": "1a53374e58f384e25d37e40b717f9aa3a87cdd5038281c59768ed69186db78dc"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/曹梦林/身份证/曹梦林_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 62020,
+      "sha256": "593d3a21ced5387b613fbe2fdcf8dfa327f3ea2fe6d679e507303d092f238cfe"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/王一凡/劳动合同/王一凡_劳动合同_第1页.jpeg",
+      "category": "asset",
+      "size_bytes": 164271,
+      "sha256": "3ca2983a20a67496452fb9c5a058656d29a4b5ab9240eba129ba94e1b4c9c425"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/王一凡/劳动合同/王一凡_劳动合同_第2页.jpeg",
+      "category": "asset",
+      "size_bytes": 161961,
+      "sha256": "153eb898c2355c427415d49028f91ce1e8947b9a9b4df80f4da40d3f3d66f658"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/王一凡/社保/王一凡_社保证明.jpeg",
+      "category": "asset",
+      "size_bytes": 174242,
+      "sha256": "884d80c74c58ebe31a67825388e0eae5053b6b882d0fd949054ad4c151aa9289"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/王一凡/证书/王一凡_结业证书.png",
+      "category": "asset",
+      "size_bytes": 1355689,
+      "sha256": "70bff9df0d1338be1f376248fddf3bd6eddc53f47a8db9aa2f5064679296b8c7"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/王一凡/身份证/王一凡_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 207980,
+      "sha256": "493d94bafd6962a3793638d94dfb17e7faff377eb2fd2928413e6b20bd13f5bb"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/王一凡/身份证/王一凡_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 170640,
+      "sha256": "3ed9716408282cd4fc5f60d5400bace83466370b5db4d3c93d6575da7e9bea08"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/高珊珊/劳动合同/高珊珊_劳动合同_第1页.jpeg",
+      "category": "asset",
+      "size_bytes": 158545,
+      "sha256": "0100845a95aaecbf9595d6fbb534cdbec52b939df1668bad6992ebfa95f1d39e"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/高珊珊/劳动合同/高珊珊_劳动合同_第2页.jpeg",
+      "category": "asset",
+      "size_bytes": 162172,
+      "sha256": "72837e1e00929daad32689462b437987cf4859af0bedd92a92fe88ee4a83bd78"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/高珊珊/社保/高珊珊_社保证明.jpeg",
+      "category": "asset",
+      "size_bytes": 174318,
+      "sha256": "5b123f75d997a0a9dc19cdf0f09c4a732fc31de0a59ff10eb59617944308b77a"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/高珊珊/证书/高珊珊_结业证书.png",
+      "category": "asset",
+      "size_bytes": 1488989,
+      "sha256": "f7e2f56856f1a1baf008820b5b12f1648da3aff7117824fab7c41c433f943113"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/高珊珊/身份证/高珊珊_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 153278,
+      "sha256": "11a814727fc767710e951c10a7796b0382f4f728f75dde7fd29e4d15a126ae1e"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/人员信息库/高珊珊/身份证/高珊珊_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 123193,
+      "sha256": "b4fe91896124278566c3febefb69dc7e9d04e2a27a3c5648333ae13783430cb9"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/公司信息库/公司附件图片清单.tsv",
+      "category": "asset",
+      "size_bytes": 285,
+      "sha256": "6330726016eabe5b5aff8be2a28b0172c4796edba786f753eb2233b6cc2986cf"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/公司信息库/公章.png",
+      "category": "asset",
+      "size_bytes": 870576,
+      "sha256": "e52eecc97dca53d48fc12fee56e22aeac994b41bd2d682a2b9432500c439056d"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/公司信息库/营业执照.png",
+      "category": "asset",
+      "size_bytes": 633104,
+      "sha256": "9713e94901dfee06575fa032a0c2fb29011ba1f25342c30a213d8a6ab006ef4c"
+    },
+    {
+      "path": "assets/company-personnel-library/北京卓凡文博技术有限公司/北京卓凡文博技术有限公司_资料卡.xlsx",
+      "category": "asset",
+      "size_bytes": 15198,
+      "sha256": "9802c95bdac13f91ae9e5c132315c96535ae9b585640ef9bdb22b83246965e40"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/README.md",
+      "category": "asset",
+      "size_bytes": 895,
+      "sha256": "95b06506653d5c56e108c39896043877a38aa1d9ba35362eee1179a9a14beaea"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/刘晓利/劳动合同/刘晓利_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 353797,
+      "sha256": "674ff370b3805bf116ae6b408894e7a53be943d2a1e415255f9e32f1d21588da"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/刘晓利/劳动合同/刘晓利_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 414749,
+      "sha256": "45ccc572ead3c1a62cfd4dcb51263ab916f4d9f746285d17c0327d65e5e473e3"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/刘晓利/劳动合同/刘晓利_劳动合同_第3页.png",
+      "category": "asset",
+      "size_bytes": 358839,
+      "sha256": "6347a9fcce48333db253fecc8575305847a9e273d9636c00ca6c09518a8d88c8"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/刘晓利/社保/刘晓利_社保证明.png",
+      "category": "asset",
+      "size_bytes": 10442194,
+      "sha256": "703fe94df97a598bbf17cba93c80fab86a193366447d462e5c33bbea8722f592"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/刘晓利/证书/刘晓利_证书.png",
+      "category": "asset",
+      "size_bytes": 660566,
+      "sha256": "6b3bade3cdd49102b97f28fc065ccfd0529a7845c3244e57ffeca21636b49728"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/刘晓利/身份证/刘晓利_身份证正面.jpeg",
+      "category": "asset",
+      "size_bytes": 72100,
+      "sha256": "1cd0d0a36ceeff90c1a743fba59cfe650214a7a57a0e3b49ce9d914a56f22884"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/刘晓利/身份证/刘晓利_身份证背面.jpeg",
+      "category": "asset",
+      "size_bytes": 50864,
+      "sha256": "288238aed9f672b78fc18ae50726cdc6b5bd4ab864abedc60c8131b85c9c733e"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/孙洪瑞/劳动合同/孙洪瑞_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 513944,
+      "sha256": "1202603275174d1158582fac77b3049e850a44d097fff8e2b418a882edf45a18"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/孙洪瑞/劳动合同/孙洪瑞_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 684097,
+      "sha256": "d026d5cbdb6c939a8c23643e19976cc67501934ddaa215df8f1afcfef8eaf78f"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/孙洪瑞/社保/孙洪瑞_社保证明.png",
+      "category": "asset",
+      "size_bytes": 417297,
+      "sha256": "f4c2da50dfbfb5a63fda9770ebf0f86845fac6888829fecde74c73f218e6d217"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/孙洪瑞/证书/孙洪瑞_证书.png",
+      "category": "asset",
+      "size_bytes": 992042,
+      "sha256": "48e2052debebc6bc8648be10bcd5f569f5e60ea49e5967bd28961db5adf68f33"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/孙洪瑞/身份证/孙洪瑞_身份证正面.png",
+      "category": "asset",
+      "size_bytes": 208405,
+      "sha256": "2a75bb5b023e819bd1af710140ebaf52e47717d33588a0baa06cdf4e69f26d38"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/孙洪瑞/身份证/孙洪瑞_身份证背面.png",
+      "category": "asset",
+      "size_bytes": 190896,
+      "sha256": "8e249883bb773e2708264ed8d38894815beba545f70904a5ac9eed2ed165481b"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/张志兴/劳动合同/张志兴_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 433360,
+      "sha256": "1a7d91e4d7fb4f0dc58473afe3f91a325d573f41941a7a42d0a70631bb2cf8a5"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/张志兴/劳动合同/张志兴_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 537610,
+      "sha256": "61861e7450770ba37aa61660d7de91f18a3e3d023b4085a89aa13cbece5cb02f"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/张志兴/社保/张志兴_社保证明.png",
+      "category": "asset",
+      "size_bytes": 433045,
+      "sha256": "aa33a1b11aa1c64e5cd43246a99d78873aeb8a3ff22032b62e17ed4533aa0a05"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/张志兴/证书/张志兴_证书.png",
+      "category": "asset",
+      "size_bytes": 801963,
+      "sha256": "5eddfabf889536667efc1d1329f2c78a6e8e88f858f0b35fa863ece160901cc2"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/张志兴/身份证/张志兴_身份证正面.png",
+      "category": "asset",
+      "size_bytes": 949367,
+      "sha256": "c38302662890e862b92a35724ca86d1b16ebf279aff7d7705fcab5eb5142ba20"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/张志兴/身份证/张志兴_身份证背面.png",
+      "category": "asset",
+      "size_bytes": 1270261,
+      "sha256": "203c34c59a705f0eaeca9ce1573295cac91a6cb2fdc4687a80df6ecddbd97980"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/李旭锋/劳动合同/李旭锋_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 509987,
+      "sha256": "5cab7e2881abb594f897fe6f99a165a82c545054e0d1ba6e8e0ed12aa45b4f2c"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/李旭锋/劳动合同/李旭锋_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 678112,
+      "sha256": "ed7d39a62dccb64d8bf72f5618a798f1f29839d3070b11d39dc0a6db7f7a0983"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/李旭锋/社保/李旭锋_社保证明.png",
+      "category": "asset",
+      "size_bytes": 435674,
+      "sha256": "74bf0cce126c4b88610ce0efd671d5483857daf44bd21c6659bbbc11dfe55f88"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/李旭锋/证书/李旭锋_证书.png",
+      "category": "asset",
+      "size_bytes": 959593,
+      "sha256": "ed38366ee9ee48a9e97d5ecb6ac7397cdbb7845e521b4cb32b1695db723b6fd9"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/李旭锋/身份证/李旭锋_身份证正面.png",
+      "category": "asset",
+      "size_bytes": 573211,
+      "sha256": "2d8a029ed23ecd385e58e6dadd7065112709ac45ed55db7d12f3eb831768a93d"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/李旭锋/身份证/李旭锋_身份证背面.png",
+      "category": "asset",
+      "size_bytes": 445585,
+      "sha256": "555b3f218d338454f16eab4d11e45fb5b162a4087510da0cf484dd44b2135242"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/李潜林/劳动合同/李潜林_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 368611,
+      "sha256": "b237dacb4a682b732a9d71e89f22d8696caec5562aaac6b79ae75d47c47d0d0c"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/李潜林/劳动合同/李潜林_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 550242,
+      "sha256": "998246d2868b283f8e8b2a7a6157b880cb44c19d0791f8ab0cf91cec4b7be37d"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/李潜林/社保/李潜林_社保证明.png",
+      "category": "asset",
+      "size_bytes": 421578,
+      "sha256": "f4ea98ed77ca915b911ca0a298cf484948abb351d85987bfbd15d6c89685d80f"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/李潜林/证书/李潜林_证书.png",
+      "category": "asset",
+      "size_bytes": 1535127,
+      "sha256": "f955f988bf094880e07815e0e1edb3a4e0f02e71d9e5db016e163816aa1a65e6"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/李潜林/身份证/李潜林_身份证正面.png",
+      "category": "asset",
+      "size_bytes": 362016,
+      "sha256": "de2c63959bfbadeed98f707b8304fdb101a0cd7e4441a2f1b3c9ed6cd7ccc253"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/李潜林/身份证/李潜林_身份证背面.png",
+      "category": "asset",
+      "size_bytes": 342088,
+      "sha256": "d2564b11bf42c54e5e7f1656b1adf7bca2b2ccb23950c137afde35ae765d77a1"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/魏士琪/劳动合同/魏士琪_劳动合同_第1页.png",
+      "category": "asset",
+      "size_bytes": 487570,
+      "sha256": "e2c2b4ff98e690490ebe3e982ea75efc8b921b3d6c2a7f9c20f56c2dfc76fcfc"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/魏士琪/劳动合同/魏士琪_劳动合同_第2页.png",
+      "category": "asset",
+      "size_bytes": 709415,
+      "sha256": "25ad96d602bc2127de03f690f0b6bec6ccd334a0fe89456ca3adb72db9e5245d"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/魏士琪/社保/魏士琪_社保证明.png",
+      "category": "asset",
+      "size_bytes": 10222848,
+      "sha256": "fc392fb841e7f54b870fe4bb1abf844bb2e43e04089c27043216cdad56148750"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/魏士琪/证书/魏士琪_证书.png",
+      "category": "asset",
+      "size_bytes": 1003723,
+      "sha256": "58f2e43a083d290617c09cd034a033dcafb02e33456464913f704520cb568ea9"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/魏士琪/身份证/魏士琪_身份证正面.png",
+      "category": "asset",
+      "size_bytes": 2536193,
+      "sha256": "289299a311399e859a4ddb9e0464d661ca8301dcf10ad03eebf155eeeb03a85f"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/人员信息库/魏士琪/身份证/魏士琪_身份证背面.png",
+      "category": "asset",
+      "size_bytes": 1630106,
+      "sha256": "43b440121bacb41b5485e7bc6d7cd3ee30bb51377757fab4bb4a6d1400dab058"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/公司信息库/公司印章.png",
+      "category": "asset",
+      "size_bytes": 123693,
+      "sha256": "5511f1ea44ac42f35cd513a824e1aceecaa99a0b338d5badba6c9f23e7b97260"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/公司信息库/公司资质.png",
+      "category": "asset",
+      "size_bytes": 127923,
+      "sha256": "9dc3b071b665a7572d5175ff6aeb1abeb2ce8db26cb0c1e88ef65a8c8983ee60"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/公司信息库/公司附件图片清单.tsv",
+      "category": "asset",
+      "size_bytes": 541,
+      "sha256": "53ac78413523a9dda2a763812727fb392b03226c3b06c64d70e04c689b12d3fe"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/公司信息库/营业执照.jpeg",
+      "category": "asset",
+      "size_bytes": 216285,
+      "sha256": "98d9108a3e14d3772877a289cc2574b2cf6a5a09d45a1e76f0c2c4dd2ce1dee0"
+    },
+    {
+      "path": "assets/company-personnel-library/河南燧火文物保护有限公司/河南燧火文物保护有限公司_资料卡.xlsx",
+      "category": "asset",
+      "size_bytes": 15056,
+      "sha256": "57d434a6db71a1c27f27a038313296752e75c6b6161ff1a879d6fdf844910c11"
+    },
+    {
+      "path": "assets/templates/forms/人工填写表模板.xlsx",
+      "category": "asset",
+      "size_bytes": 39386,
+      "sha256": "0fc71a3697394f5f45c017d06f2e3dd72012790f1d32114292ab2cc189599ace"
+    },
+    {
+      "path": "assets/templates/reports/智能报告生成基准模板_北京卓凡文博技术有限公司_无遗迹.docx",
+      "category": "asset",
+      "size_bytes": 14635563,
+      "sha256": "131251d3abd034290b7817bc61bf2bdc385290f92b0fc33c3493d5eee0bc7682"
+    },
+    {
+      "path": "assets/templates/reports/智能报告生成基准模板_北京卓凡文博技术有限公司_有分区、无遗迹.docx",
+      "category": "asset",
+      "size_bytes": 14112539,
+      "sha256": "d494bb82429a293b1c3fc40ec7ae26330d6a106704b5a50ee2c1d6d1abb2bf54"
+    },
+    {
+      "path": "assets/templates/reports/智能报告生成基准模板_北京卓凡文博技术有限公司_有分区、有遗迹.docx",
+      "category": "asset",
+      "size_bytes": 15989834,
+      "sha256": "dea86d228ff7f2426fbb745808a369a946a051b14eb5a2ac65c66cd32a4d845b"
+    },
+    {
+      "path": "assets/templates/reports/智能报告生成基准模板_北京卓凡文博技术有限公司_有遗迹.docx",
+      "category": "asset",
+      "size_bytes": 15879588,
+      "sha256": "ba0768b47dcf38bb3f14432b7d511b728971e6652a53402111905fa941b18bd1"
+    },
+    {
+      "path": "references/safety-checklist.md",
+      "category": "reference",
+      "size_bytes": 2192,
+      "sha256": "cc3e8e98ffb596e01d28a154997a4075d920fd98df89b544b2380cab5800a5f6"
+    },
+    {
+      "path": "references/test-plan.md",
+      "category": "reference",
+      "size_bytes": 1865,
+      "sha256": "0552dd00ca4acc82e261286c2b79a226f06115c03c559d79d9d76450ee3a6b61"
+    },
+    {
+      "path": "references/新报告接收流程.md",
+      "category": "reference",
+      "size_bytes": 8992,
+      "sha256": "ea4062f3bd2e12625f60a4f262c573dc0d79ebb67261019f5cbf66af10045fa5"
+    },
+    {
+      "path": "references/智能勘探报告通用流程.md",
+      "category": "reference",
+      "size_bytes": 7602,
+      "sha256": "b0f644adee8135b5ace82863535275b92e2592364d418540bc5ba3f3e08a6f90"
+    },
+    {
+      "path": "references/智能报告替换变量与资料路径对照.md",
+      "category": "reference",
+      "size_bytes": 36209,
+      "sha256": "209d972e27afa080096d8c2ae4c56ebf44be0c3594b63fe37cdbf8ec6e941f13"
+    },
+    {
+      "path": "references/智能模板字段计算规则.md",
+      "category": "reference",
+      "size_bytes": 10261,
+      "sha256": "8eb84a90e4cbd170af287d6e114d25ed3c21862b3d71a319fd64337be70b8fa5"
+    },
+    {
+      "path": "references/有分区模板匹配检查.md",
+      "category": "reference",
+      "size_bytes": 2844,
+      "sha256": "5ccbf932ffc96878863144924f7a11a9b52204566725a2e3ddc20a5d3ef4e0b5"
+    },
+    {
+      "path": "scripts/build_smart_template.py",
+      "category": "script",
+      "size_bytes": 14305,
+      "sha256": "3610813ab52679033082512563c283da9e4db39b9ca9b4f1e9b3dd231f0b103c"
+    },
+    {
+      "path": "scripts/check_smart_report.py",
+      "category": "script",
+      "size_bytes": 77288,
+      "sha256": "4011e72fa37577b44398970f4b94dc6f9aff45885738a95c7f0497f9bb218b08"
+    },
+    {
+      "path": "scripts/create_manual_form_from_project.py",
+      "category": "script",
+      "size_bytes": 49259,
+      "sha256": "fd17c50e8db42209872d4079a0ae7293bd01073c768e8464c05c3f53df65a2b9"
+    },
+    {
+      "path": "scripts/create_smart_report_input_form.py",
+      "category": "script",
+      "size_bytes": 11118,
+      "sha256": "bff7687815fff5d85db2eb6585abcaf41f491ddb3e56ea34e3f531032e96bf19"
+    },
+    {
+      "path": "scripts/fill_smart_template_from_form.py",
+      "category": "script",
+      "size_bytes": 281545,
+      "sha256": "5d53963adb31428c33fa290212e53dddef2191695eec1e655317379098b7169a"
+    },
+    {
+      "path": "scripts/generate_report.py",
+      "category": "script",
+      "size_bytes": 31992,
+      "sha256": "1992b5d1ba168db801ed8a2a805a762adbf36e2a631c8d1fe5510f487e31d2bd"
+    },
+    {
+      "path": "scripts/region_overview_agent.py",
+      "category": "script",
+      "size_bytes": 34850,
+      "sha256": "6990800bc4ad68496db69e4a75db0868fac302fd4dd8aafb8508b98e589af289"
+    },
+    {
+      "path": "scripts/requirements.txt",
+      "category": "script",
+      "size_bytes": 16,
+      "sha256": "736c089094daa0849a4b4a470bf26e8e54b454ab05cb2c1645e390ebd6807c6d"
+    },
+    {
+      "path": "scripts/run_smart_report_workflow.py",
+      "category": "script",
+      "size_bytes": 42798,
+      "sha256": "823b1fccb041b36d634041e37329a163dbfd4e886edd2b09cc36fadba1f7e6d7"
+    },
+    {
+      "path": "scripts/self_test_skill.py",
+      "category": "script",
+      "size_bytes": 3397,
+      "sha256": "3aebd1cc601c717af9f8a7770b673427481977661e975978cc17e963ce9a7a24"
+    },
+    {
+      "path": "scripts/upgrade_legacy_templates_to_smart_baselines.py",
+      "category": "script",
+      "size_bytes": 9059,
+      "sha256": "a4a714352e45315ca9730ef90d3e31f7186355d438441409548bc7ab8c5ec837"
+    },
+    {
+      "path": "scripts/verify_manifest.py",
+      "category": "script",
+      "size_bytes": 3297,
+      "sha256": "7fa8d906874718d1c950fcda6fe11e639b5439e2f0e5043299ec198bce4a23d5"
+    }
+  ]
+}
