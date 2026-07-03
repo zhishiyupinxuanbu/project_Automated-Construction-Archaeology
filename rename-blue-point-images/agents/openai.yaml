@@ -1,0 +1,4 @@
+interface:
+  display_name: "蓝点图片重命名"
+  short_description: "自动识别蓝色点单元命名，并纠正标准孔照片方向。"
+  default_prompt: "请使用这个技能，把指定文件夹中的标准孔图按 Uxx-AxxxByyy 重命名，或把标准孔照片按 TK 标签自动转正。"
