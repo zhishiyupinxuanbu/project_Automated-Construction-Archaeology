@@ -1,0 +1,6 @@
+interface:
+  display_name: "项目资料管理"
+  short_description: "创建、整理并检查项目资料归档"
+  default_prompt: "Use $project-data-management to create, organize, or audit a project data archive."
+policy:
+  allow_implicit_invocation: true
