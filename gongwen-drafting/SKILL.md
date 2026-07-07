@@ -35,6 +35,7 @@ description: Draft, revise, route, validate, and deliver Chinese official reques
 4. `references/drafting-rules.md`
 5. `references/word-output.md`
 6. `references/resource-map.md`
+7. 涉及勘探请示、勘探计划备案请示时读取 `references/timeline-validation.md`
 
 根据任务再读本 skill 的参考文件：
 
@@ -43,6 +44,7 @@ description: Draft, revise, route, validate, and deliver Chinese official reques
 - 写作底线、禁用词、长期记忆边界：`references/drafting-rules.md`
 - Word 生成、格式化、校验和 OCR：`references/word-output.md`
 - 内置资源位置和使用边界：`references/resource-map.md`
+- 勘探请示与勘探计划时间硬闸门：`references/timeline-validation.md`
 - 项目长期规则副本：`references/project-rules/`
 - AI 接手说明副本：`references/project-handoff/`
 - 资料索引、文种手册、模板内化和文件卡片：`references/knowledge-index/`
@@ -53,10 +55,11 @@ description: Draft, revise, route, validate, and deliver Chinese official reques
 2. 判断文种、办理阶段、发文主体和受文关系。能从材料判断就继续；判断会明显错向时再问用户。若识别为文物调查报告、市级调查报告或自治区调查报告，停止本 skill 流程并转用 `gongwen-survey-report`。
 3. 按“地区 + 文种”优先检索模板索引、文种手册、模板内化文件和参考件，不要先套通用模板。
 4. 请示类正文先写背景、事实依据或工作进展，再写请示事项。
-5. 生成或修改时保持事实口径：项目名称、单位名称、面积、日期、数量、附件名称按材料原文或用户确认处理；可以写“项目面积”或“项目用地面积”，禁止写“调查面积”和“勘探面积”。
-6. 输出时默认生成一份桌面格式化 `.docx`。最终调整版式时，必须以 `assets/fixed-format/固定版式——文物保护许可核查请示格式范本.docx` 作为固定版式 Word 样张，逐项核对红头、标题、正文、附件、落款的字体字号、段落缩进、附件悬挂缩进、制表位和落款对齐；带红头且暂无正式文号或签发人时，必须在红头信息行保留 `【文号】`、`【签发人】` 文字占位；除非地区模板有明确硬性差异，不得用通用公文记忆或手工空格替代样张版式。
-7. 大幅生成或修改后，按项目规则补成稿复盘；资料库结构、入口、规则、脚本或索引说明变化必须写健康检查日志。
-8. 用户明确要求完善、固定或更新 skill 时，优先修改本项目副本；确认稳定后再同步到全局 skill。
+5. 生成申请开展考古勘探工作请示、勘探计划备案请示或同类勘探请示前，必须执行时间硬闸门：请示日期必须在文物调查结束之后，且不得早于企业取得回函/复函日期；回函与请示同一天可以，取得回函后 2-3 天再报也可以；计划勘探开始日期必须在打请示 2-3 天后；任一缺失或冲突立即停止并报错给用户。
+6. 生成或修改时保持事实口径：项目名称、单位名称、面积、日期、数量、附件名称按材料原文或用户确认处理；可以写“项目面积”或“项目用地面积”，禁止写“调查面积”和“勘探面积”。
+7. 输出时默认生成一份桌面格式化 `.docx`。最终调整版式时，必须以 `assets/fixed-format/固定版式——文物保护许可核查请示格式范本.docx` 作为固定版式 Word 样张，逐项核对红头、标题、正文、附件、落款的字体字号、段落缩进、附件悬挂缩进、制表位和落款对齐；除非地区模板有明确硬性差异，不得用通用公文记忆或手工空格替代样张版式。
+8. 大幅生成或修改后，按项目规则补成稿复盘；资料库结构、入口、规则、脚本或索引说明变化必须写健康检查日志。
+9. 用户明确要求完善、固定或更新 skill 时，优先修改本项目副本；确认稳定后再同步到全局 skill。
 
 ## 专项路由
 
@@ -73,6 +76,7 @@ description: Draft, revise, route, validate, and deliver Chinese official reques
 ```bash
 python3 scripts/gongwen-agent/gongwen_agent.py index --ocr --ocr-max-pages 3 --coverage-per-type 5
 python3 scripts/gongwen-agent/gongwen_agent.py draft project.json
+python3 scripts/gongwen-agent/validate_project_timeline.py --project-json project.json --project-dir /path/to/project-source --doc-type 勘探请示
 python3 scripts/gongwen-agent/gongwen_agent.py web --host 127.0.0.1 --port 8765
 python3 scripts/check_gongwen_workspace.py
 ```
