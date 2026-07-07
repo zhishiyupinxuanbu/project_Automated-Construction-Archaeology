@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import argparse
+import csv
+import json
 from pathlib import Path
 
 from pipeline_common import now_iso, read_jsonl, update_module_state, write_json, write_jsonl
@@ -23,6 +25,22 @@ def value(rows: list[dict], field_name: str, default: str = "待确认") -> str:
     return default
 
 
+def load_chapter5_pairs(work_dir: Path) -> list[dict]:
+    human_input = work_dir / "human_input"
+    json_path = human_input / "chapter5_fact_rule_pairs.json"
+    csv_path = human_input / "chapter5_fact_rule_pairs.csv"
+    if json_path.exists():
+        data = json.loads(json_path.read_text(encoding="utf-8"))
+        if isinstance(data, dict):
+            return list(data.get("pairs") or [])
+        if isinstance(data, list):
+            return data
+    if csv_path.exists():
+        with csv_path.open(encoding="utf-8-sig", newline="") as f:
+            return list(csv.DictReader(f))
+    return []
+
+
 def main() -> None:
     args = parse_args()
     work_dir = Path(args.work_dir).expanduser().resolve()
@@ -33,6 +51,7 @@ def main() -> None:
 
     project = read_jsonl(work_dir / "facts" / "project_facts.jsonl")
     heritage = read_jsonl(work_dir / "facts" / "heritage_facts.jsonl")
+    chapter5_pairs = load_chapter5_pairs(work_dir)
     heritage_name = value(heritage, "文物名称")
     relation = value(heritage, "空间关系")
 
@@ -120,6 +139,19 @@ def main() -> None:
     ]
     write_jsonl(analysis_dir / "impact_matrix.jsonl", impact_matrix)
     write_jsonl(analysis_dir / "mitigation_matrix.jsonl", mitigation_matrix)
+    write_jsonl(analysis_dir / "chapter5_fact_rule_pairs.jsonl", chapter5_pairs)
+    write_jsonl(
+        analysis_dir / "chapter5_pairing_issues.jsonl",
+        []
+        if chapter5_pairs
+        else [
+            {
+                "issue_id": "C5P001",
+                "issue": "未找到第五章事实条文人工配对结果；正式生成第五章判断前应先完成 human_input/chapter5_fact_rule_pairs.json。",
+                "blocking_for_formal_report": True,
+            }
+        ],
+    )
     write_jsonl(analysis_dir / "risk_flags.jsonl", [{"risk_id": "R001", "risk": "所有影响判断均为初步判断，需专业负责人确认。"}])
     write_jsonl(analysis_dir / "analysis_notes.jsonl", [{"note_id": "AN001", "note": "分析矩阵由事实抽取成果生成，需结合正式模板扩写。"}])
     write_jsonl(analysis_dir / "expert_review_points.jsonl", [{"point_id": "ER001", "point": "重点复核空间关系、建控要求、设计高度体量和施工组织。"}])
@@ -162,8 +194,8 @@ def main() -> None:
             "status": "completed",
             "started_at": now_iso(),
             "finished_at": now_iso(),
-            "input_files": ["facts/project_facts.jsonl", "facts/heritage_facts.jsonl"],
-            "output_files": ["analysis/impact_matrix.jsonl", "analysis/mitigation_matrix.jsonl", "next_prompts/next_prompt_report_assembly.md"],
+            "input_files": ["facts/project_facts.jsonl", "facts/heritage_facts.jsonl", "human_input/chapter5_fact_rule_pairs.json"],
+            "output_files": ["analysis/impact_matrix.jsonl", "analysis/mitigation_matrix.jsonl", "analysis/chapter5_fact_rule_pairs.jsonl", "analysis/chapter5_pairing_issues.jsonl", "next_prompts/next_prompt_report_assembly.md"],
             "blocking_gaps_count": 0,
             "issues_count": 0,
             "next_prompt": "next_prompts/next_prompt_report_assembly.md",

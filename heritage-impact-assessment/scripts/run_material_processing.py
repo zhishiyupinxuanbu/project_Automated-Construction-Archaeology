@@ -173,15 +173,50 @@ def safe_stem(text: str) -> str:
     return safe or "supporting_file"
 
 
+def supporting_pdf_body_page_count(path: Path) -> int | None:
+    if not shutil.which("pdfinfo") or not shutil.which("pdftotext"):
+        return None
+    try:
+        info = subprocess.run(["pdfinfo", str(path)], text=True, capture_output=True, timeout=30)
+        match = re.search(r"^Pages:\s*(\d+)", info.stdout, flags=re.M)
+        total_pages = int(match.group(1)) if match else 0
+    except Exception:
+        return None
+    if total_pages <= 0:
+        return None
+    body_pages = total_pages
+    for page_no in range(1, total_pages + 1):
+        try:
+            result = subprocess.run(
+                ["pdftotext", "-f", str(page_no), "-l", str(page_no), "-layout", str(path), "-"],
+                text=True,
+                capture_output=True,
+                timeout=30,
+            )
+        except Exception:
+            return None
+        text = result.stdout.strip()
+        compact = re.sub(r"\s+", "", text[:400])
+        if page_no > 1 and re.match(r"^附件(?:[一二三四五六七八九十\d]|[:：])", compact):
+            body_pages = page_no - 1
+            break
+    return max(1, body_pages)
+
+
 def convert_supporting_pdf_to_images(path: Path, *, file_id: str, rel: Path, image_dir: Path, output_dir: Path) -> tuple[list[str], str | None]:
     if not shutil.which("pdftoppm"):
         return [], "pdftoppm 不可用，支持性 PDF 未能转为正文图片"
     target_dir = image_dir / file_id
     target_dir.mkdir(parents=True, exist_ok=True)
     prefix = target_dir / safe_stem(Path(rel).stem)
+    page_count = supporting_pdf_body_page_count(path)
+    command = ["pdftoppm", "-png", "-r", "180"]
+    if page_count:
+        command.extend(["-f", "1", "-l", str(page_count)])
+    command.extend([str(path), str(prefix)])
     try:
         result = subprocess.run(
-            ["pdftoppm", "-png", "-r", "180", str(path), str(prefix)],
+            command,
             text=True,
             capture_output=True,
             timeout=120,

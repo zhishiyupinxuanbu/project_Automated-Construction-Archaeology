@@ -29,11 +29,71 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def fact_value(rows: list[dict], field: str, default: str = "待确认") -> str:
+def fact_value(rows: list[dict], field: str, default: str = "") -> str:
     for row in rows:
         if row.get("field_name") == field:
             return row.get("value") or default
     return default
+
+
+FORBIDDEN_SUBMISSION_PATTERNS = [
+    r"【待",
+    r"待核对",
+    r"待复核",
+    r"待确认",
+    r"待核验",
+    r"待补充",
+    r"未确认",
+    r"未写明",
+    r"资料缺失",
+    r"后续补充",
+    r"不确定",
+    r"不编造坐标",
+    r"正式报批阶段如主管部门要求",
+    r"思考过程",
+    r"推理过程",
+    r"分析过程如下",
+    r"OCR材料(?:显示|载明|表明)",
+    r"保护规划修编OCR材料",
+    r"调查材料(?:显示|载明|表明)",
+    r"依据项目资料",
+    r"项目资料(?:显示|载明|表明)",
+    r"(?:可研|可行性研究报告)(?:从|称|提出|同时提出|显示|载明|表明)",
+    r"根据《[^》]*(?:可研|可行性研究|建设方案|工程方案|勘探工作报告|文物调查|调查的报告|验收意见书|项目资料)[^》]*》",
+    r"《[^》]*(?:可研|可行性研究|建设方案|工程方案|勘探工作报告|文物调查|调查的报告|验收意见书|项目资料)[^》]*》(中|内|显示|载明|指出|提出)",
+]
+
+
+def find_forbidden_submission_issues(markdown: str) -> list[str]:
+    issues: list[str] = []
+    for pattern in FORBIDDEN_SUBMISSION_PATTERNS:
+        match = re.search(pattern, markdown)
+        if match:
+            excerpt_start = max(0, match.start() - 45)
+            excerpt_end = min(len(markdown), match.end() + 45)
+            excerpt = " ".join(markdown[excerpt_start:excerpt_end].split())
+            issues.append(f"{pattern} -> {excerpt}")
+    return issues
+
+
+def sanitize_submission_text(text: str) -> str:
+    replacements = [
+        ("保护规划修编OCR材料显示，", ""),
+        ("调查材料载明，", ""),
+        ("可研同时提出，", "项目方案同时明确，"),
+        ("可研提出", "项目方案提出"),
+        ("可研称", "项目方案明确"),
+        ("调查意见认为", "调查结论认为"),
+    ]
+    cleaned = text
+    for old, new in replacements:
+        cleaned = cleaned.replace(old, new)
+    cleaned = re.sub(
+        r"根据《[^》]*(?:可研|可行性研究|建设方案|工程方案|勘探工作报告|文物调查|调查的报告|验收意见书|项目资料)[^》]*》(?:和验收意见书)?，?",
+        "",
+        cleaned,
+    )
+    return cleaned.strip()
 
 
 def md_table(rows: list[dict], columns: list[tuple[str, str]]) -> str:
@@ -301,7 +361,7 @@ def technical_spec_text(quotes: list[dict]) -> tuple[str, list[str]]:
     if quote:
         evidence_ids = [quote.get("source_evidence_id", "")] if quote.get("source_evidence_id") else []
         return quote.get("text", ""), evidence_ids
-    return "【待核验：需从项目可研报告/建设方案中完整摘录本项目技术规范对应章节；不得概述或选择性摘抄。】", []
+    raise SystemExit("阻断：缺少可直接写入提交版的技术规范原文章节。请先补齐 quote_candidates.jsonl。")
 
 
 def chapter_two_opening_lead(quotes: list[dict]) -> tuple[str, list[str]]:
@@ -320,7 +380,7 @@ def project_overview_natural_text(quotes: list[dict], project: list[dict]) -> tu
     return (
         f"{fact_value(project, '项目名称')}位于{fact_value(project, '建设地点')}，建设单位为{fact_value(project, '建设单位')}。"
         f"项目主要建设内容为{fact_value(project, '建设内容')}，建设规模包括{fact_value(project, '项目面积')}。"
-        "【待依据项目可研报告或建设方案补充为自然段，禁止改成项目基本信息表。】",
+        "",
         ["E0001"],
     )
 
@@ -328,7 +388,7 @@ def project_overview_natural_text(quotes: list[dict], project: list[dict]) -> tu
 def project_necessity_blocks(quotes: list[dict]) -> tuple[list[str], list[str]]:
     quote = first_quote_for_section(quotes, "（二）项目建设必要性", "项目建设必要性原文摘录")
     if not quote:
-        return ["【待依据项目可研报告、可行性研究报告或建设方案完整摘取项目建设必要性相关内容；不得依据开工请示、图纸或项目内容自行概述拟写。】"], []
+        raise SystemExit("阻断：缺少项目建设必要性可研/建设方案原文章节，不能生成提交版。")
     evidence_ids = [quote.get("source_evidence_id", "")] if quote.get("source_evidence_id") else []
     text = quote.get("text", "").strip()
     blocks: list[str] = []
@@ -369,25 +429,23 @@ def project_scheme_subsection_blocks(quotes: list[dict], section_keyword: str, q
 def site_selection_blocks(quotes: list[dict]) -> tuple[list[str], list[str]]:
     quote = first_quote_for_section(quotes, "选址分析", "选址分析原文摘录")
     if not quote:
-        return ["【待依据项目可研报告、可行性研究报告或建设方案中的选址分析/选址必要性分析章节完整摘取相关内容；不得依据空间关系、文物保护约束或项目概况自行概述拟写。】"], []
+        raise SystemExit("阻断：缺少选址分析/选址必要性分析可研或建设方案原文章节，不能生成提交版。")
     evidence_ids = [quote.get("source_evidence_id", "")] if quote.get("source_evidence_id") else []
     return quote_text_blocks(quote.get("text", "")) or [quote.get("text", "")], evidence_ids
 
 
 def supporting_file_blocks(supporting_files: list[dict]) -> list[str]:
     if not supporting_files:
-        return ["【待补充：本节仅可放立项、选址、核准文件或文物调查回函；PDF需转为图片插入，其他文件一概不放。】"]
+        raise SystemExit("阻断：缺少可插入第三章的立项、选址、核准文件或文物调查回函。")
     blocks: list[str] = []
     for index, row in enumerate(supporting_files, start=1):
         source_file = str(row.get("source_file", "")).strip()
-        support_type = str(row.get("support_type", "支持性文件")).strip() or "支持性文件"
-        blocks.append(f"{index}. {support_type}：《{source_file}》。")
         image_paths = row.get("image_paths") or []
         if image_paths:
             for image_index, image_path in enumerate(image_paths, start=1):
-                blocks.append(f"![{source_file} 第{image_index}页]({image_path})")
+                blocks.append(f"![支持性文件正文第{image_index}页]({image_path})")
         elif source_file.lower().endswith(".pdf"):
-            blocks.append("【待处理：该支持性文件为 PDF，需转为图片后插入正文。】")
+            raise SystemExit(f"阻断：支持性文件 PDF 尚未转为正文页图片：{source_file}")
     return blocks
 
 
@@ -446,11 +504,12 @@ def chapter_four_opening_lead(project_name: str, heritage_name: str) -> str:
     )
 
 
-def chapter_four_first_section_intro(project: list[dict], heritage: list[dict]) -> str:
+def chapter_four_first_section_intro(project: list[dict], heritage: list[dict], *, has_coordinates: bool) -> str:
     project_name = fact_value(project, "项目名称", "【项目名称】")
     location = fact_value(project, "建设地点", "【项目位置】")
     spatial_relation = fact_value(heritage, "空间关系", "【项目与文物空间关系】")
-    return f"{project_name}位于{location}，{spatial_relation}。项目拐点坐标见表4。"
+    suffix = "项目拐点坐标见表4。" if has_coordinates else ""
+    return f"{project_name}位于{location}，{spatial_relation}。{suffix}"
 
 
 def heritage_name_for_zoning_paragraph(heritage_name: str) -> str:
@@ -509,11 +568,43 @@ def chapter_five_integrated_impact_blocks(heritage: list[dict]) -> list[str]:
 
 def project_corner_coordinate_blocks(project_name: str, coordinates: list[dict]) -> list[str]:
     if not coordinates:
-        return ["【待补充：项目拐点坐标表。一般从项目资料中的项目经纬度坐标 Excel 表获取，不得自行编造坐标。】"]
+        return ["【缺少坐标表】"]
     return [
         f"表4 {project_name}拐点坐标表",
         md_table(coordinates, [("point_id", "序号"), ("longitude", "经度（E）"), ("latitude", "纬度（N）")]),
     ]
+
+
+def mitigation_paragraph_blocks(mitigations: list[dict]) -> list[str]:
+    if not mitigations:
+        raise SystemExit("阻断：缺少第六章减缓措施矩阵，不能生成提交版。")
+    grouped: dict[str, list[dict]] = {}
+    for row in mitigations:
+        phase = str(row.get("phase", "")).strip() or "全过程"
+        grouped.setdefault(phase, []).append(row)
+    phase_order = ["设计阶段", "施工期", "建设期", "运营期", "全过程"]
+    ordered_phases = [phase for phase in phase_order if phase in grouped] + [
+        phase for phase in grouped if phase not in phase_order
+    ]
+    blocks: list[str] = []
+    chinese_numbers = "一二三四五六七八九十"
+    for index, phase in enumerate(ordered_phases, start=1):
+        number = chinese_numbers[index - 1] if index <= len(chinese_numbers) else str(index)
+        blocks.append(f"### （{number}）{phase}减缓措施")
+        for row in grouped[phase]:
+            risk_source = str(row.get("risk_source", "")).strip()
+            control_measure = str(row.get("control_measure", "")).strip()
+            responsible_party = str(row.get("responsible_party", "")).strip()
+            monitoring = str(row.get("monitoring_or_acceptance", "")).strip()
+            sentence = control_measure
+            if risk_source:
+                sentence = f"针对{risk_source}，{sentence}"
+            if responsible_party:
+                sentence += f"相关措施由{responsible_party}落实。"
+            if monitoring:
+                sentence += f"实施效果通过{monitoring}进行检查。"
+            blocks.append(sentence)
+    return blocks
 
 
 def exploration_source_text(work_dir: Path, text_index: list[dict]) -> str:
@@ -758,6 +849,10 @@ def build_markdown(work_dir: Path, with_evidence: bool) -> tuple[str, list[dict]
     evidence_map = []
 
     def add(section: str, text: str, evidence_ids: list[str] | None = None) -> None:
+        if not with_evidence:
+            text = sanitize_submission_text(text)
+        if not text:
+            return
         lines.append(text + (f"【证据：{','.join(evidence_ids or [])}】" if with_evidence and evidence_ids else ""))
         lines.append("")
         evidence_map.append(
@@ -852,7 +947,10 @@ def build_markdown(work_dir: Path, with_evidence: bool) -> tuple[str, list[dict]
     for paragraph in value_evaluation_fixed_blocks(heritage):
         add(FORMAL_HEADINGS[1], paragraph)
     if quotes and not lead_text:
-        add(FORMAL_HEADINGS[1], quotes[-1].get("text", "文物概况待补充。"), ["E0001"])
+        fallback_text = quotes[-1].get("text", "")
+        if not fallback_text:
+            raise SystemExit("阻断：缺少可写入第二章的文物概况事实段。")
+        add(FORMAL_HEADINGS[1], fallback_text, ["E0001"])
 
     lines.append(f"## {FORMAL_HEADINGS[2]}")
     lines.append("### （一）项目概况")
@@ -907,7 +1005,11 @@ def build_markdown(work_dir: Path, with_evidence: bool) -> tuple[str, list[dict]
     add(FORMAL_HEADINGS[3], chapter_four_opening_lead(project_name, fact_value(heritage, "文物名称")))
     lines.append("### （一）项目用地与文物相对位置关系")
     lines.append("")
-    add(FORMAL_HEADINGS[3], chapter_four_first_section_intro(project, heritage), ["E0001"])
+    add(
+        FORMAL_HEADINGS[3],
+        chapter_four_first_section_intro(project, heritage, has_coordinates=bool(project_corner_coordinates)),
+        ["E0001"],
+    )
     for block in project_corner_coordinate_blocks(project_name, project_corner_coordinates):
         if block.startswith("| "):
             lines.append(block)
@@ -955,9 +1057,12 @@ def build_markdown(work_dir: Path, with_evidence: bool) -> tuple[str, list[dict]
         add(FORMAL_HEADINGS[4], "【固定表格缺失：assets/14-附表综合评估大表模板.md】")
 
     lines.append(f"## {FORMAL_HEADINGS[5]}")
-    add(FORMAL_HEADINGS[5], "减缓措施应与第五章影响路径一一对应，并纳入设计、施工、运营全过程管理。")
-    lines.append(md_table(mitigations, [("mitigation_id", "编号"), ("impact_id", "对应影响"), ("phase", "阶段"), ("risk_source", "风险来源"), ("control_measure", "控制措施"), ("responsible_party", "责任主体"), ("monitoring_or_acceptance", "监测/验收")]))
-    lines.append("")
+    for block in mitigation_paragraph_blocks(mitigations):
+        if block.startswith("### "):
+            lines.append(block)
+            lines.append("")
+        else:
+            add(FORMAL_HEADINGS[5], block)
 
     lines.append(f"## {FORMAL_HEADINGS[6]}")
     for block_type, text in chapter_seven_fixed_blocks(project_name, project, heritage, requirements, design_compliance, impacts):
@@ -1116,7 +1221,7 @@ def write_docx(path: Path, markdown: str) -> None:
     from docx import Document
     from docx.enum.text import WD_ALIGN_PARAGRAPH
     from docx.oxml.ns import qn
-    from docx.shared import Pt
+    from docx.shared import Inches, Pt
 
     doc = Document()
     configure_doc_styles(doc)
@@ -1131,16 +1236,12 @@ def write_docx(path: Path, markdown: str) -> None:
     title_run.font.name = "Times New Roman"
     title_run._element.rPr.rFonts.set(qn("w:eastAsia"), "宋体")
     title_run.font.size = Pt(22)
-    doc.add_paragraph()
-    meta = doc.add_paragraph("编制单位：【待补充】\n编制时间：【待补充】")
-    meta.alignment = WD_ALIGN_PARAGRAPH.CENTER
     doc.add_page_break()
 
     toc = doc.add_paragraph("目录")
     toc.alignment = WD_ALIGN_PARAGRAPH.CENTER
     toc.runs[0].bold = True
     toc.runs[0].font.size = Pt(16)
-    doc.add_paragraph("【目录预留页：请在 Word 中插入或更新自动目录】")
     doc.add_page_break()
 
     table_buffer: list[str] = []
@@ -1156,6 +1257,19 @@ def write_docx(path: Path, markdown: str) -> None:
             table_buffer.append(line)
             continue
         flush_table()
+        image_match = re.match(r"!\[[^\]]*\]\(([^)]+)\)", line.strip())
+        if image_match:
+            image_path = Path(image_match.group(1))
+            candidates = [image_path]
+            if not image_path.is_absolute():
+                candidates = [path.parent / image_path, skill_dir() / image_path]
+            existing = next((candidate for candidate in candidates if candidate.exists()), None)
+            if not existing:
+                raise SystemExit(f"阻断：正文图片不存在，不能生成提交版：{image_match.group(1)}")
+            picture = doc.add_paragraph()
+            picture.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            picture.add_run().add_picture(str(existing), width=Inches(5.8))
+            continue
         if line.startswith("# "):
             continue
         elif line.startswith("## "):
@@ -1176,6 +1290,10 @@ def main() -> None:
     work_dir = Path(args.work_dir).expanduser().resolve()
     clean_md, evidence_map = build_markdown(work_dir, with_evidence=False)
     evidence_md, evidence_map_e = build_markdown(work_dir, with_evidence=True)
+    submission_issues = find_forbidden_submission_issues(clean_md)
+    if submission_issues:
+        issue_lines = "\n".join(f"- {issue}" for issue in submission_issues)
+        raise SystemExit(f"阻断：清洁版仍含提交版禁用写法，请先修正上游事实/分析或拼装规则。\n{issue_lines}")
     (work_dir / "report_clean.md").write_text(clean_md, encoding="utf-8")
     (work_dir / "report_with_evidence.md").write_text(evidence_md, encoding="utf-8")
     write_jsonl(work_dir / "report_evidence_map.jsonl", evidence_map + evidence_map_e)

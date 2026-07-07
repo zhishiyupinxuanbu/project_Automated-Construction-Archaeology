@@ -610,11 +610,12 @@ def main() -> None:
 
     write_jsonl(facts_dir / "project_facts.jsonl", project_facts)
     write_jsonl(facts_dir / "heritage_facts.jsonl", heritage_facts)
+    write_jsonl(facts_dir / "requirement_facts.jsonl", [])
     write_jsonl(facts_dir / "quote_candidates.jsonl", quote_candidates)
     write_jsonl(facts_dir / "source_coverage.jsonl", source_coverage)
     write_jsonl(facts_dir / "fact_issues.jsonl", issues)
 
-    prompt_path = work_dir / "next_prompts" / "next_prompt_analysis.md"
+    prompt_path = work_dir / "next_prompts" / "next_prompt_chapter5_pairing.md"
     prompt_path.parent.mkdir(parents=True, exist_ok=True)
     prompt_path.write_text(
         "\n".join(
@@ -622,31 +623,33 @@ def main() -> None:
                 "# 下一阶段启动提示",
                 "",
                 "## 阶段",
-                "analysis",
+                "chapter5_pairing",
                 "",
                 "## 项目路径",
                 f"`{work_dir}`",
                 "",
                 "## 必读规则文件",
-                "- `references/04-分析判断模块.md`",
-                "- `references/05-文评成稿样本与文章架构.md`",
-                "- `references/11-固定正文结构与固定内容.md`",
-                "- `references/12-文物对象概述与价值评估规则.md`",
-                "- `references/13-空间关系写作规则.md`",
+                "- `references/19-第五章事实条文匹配页面与影响因子规则.md`",
                 "",
                 "## 只读输入",
                 "- `facts/project_facts.jsonl`",
                 "- `facts/heritage_facts.jsonl`",
+                "- `facts/requirement_facts.jsonl`",
                 "- `facts/quote_candidates.jsonl`",
                 "- `facts/source_coverage.jsonl`",
                 "- `evidence/evidence_register.jsonl`",
                 "- `processing_output/external_sources.jsonl`",
                 "",
+                "## 执行命令",
+                f"- `python scripts/generate_chapter5_pairing_page.py --工作目录 \"{work_dir}\"`",
+                "",
                 "## 必写输出",
-                "- `analysis/impact_matrix.jsonl`",
-                "- `analysis/mitigation_matrix.jsonl`",
-                "- `analysis/risk_flags.jsonl`",
-                "- `next_prompts/next_prompt_report_assembly.md`",
+                "- `human_input/chapter5_fact_rule_pairing.html`",
+                "- `human_input/chapter5_fact_rule_pairing_seed.json`",
+                "- `human_input/chapter5_fact_rule_pairing_seed.csv`",
+                "",
+                "## 暂停条件",
+                "返回 HTML 页面给用户完成人工配对；用户导出或提交 `chapter5_fact_rule_pairs.json` 后，再启动分析判断阶段。",
             ]
         )
         + "\n",
@@ -662,11 +665,11 @@ def main() -> None:
             "started_at": now_iso(),
             "finished_at": now_iso(),
             "input_files": ["processing_output/manifest.json", "processing_output/text_index.jsonl", "evidence/evidence_register.jsonl"],
-            "output_files": ["facts/project_facts.jsonl", "facts/heritage_facts.jsonl", "facts/quote_candidates.jsonl", "facts/source_coverage.jsonl", "facts/fact_issues.jsonl", "next_prompts/next_prompt_analysis.md"],
+            "output_files": ["facts/project_facts.jsonl", "facts/heritage_facts.jsonl", "facts/requirement_facts.jsonl", "facts/quote_candidates.jsonl", "facts/source_coverage.jsonl", "facts/fact_issues.jsonl", "next_prompts/next_prompt_chapter5_pairing.md"],
             "blocking_gaps_count": 0,
             "issues_count": len(issues),
-            "next_prompt": "next_prompts/next_prompt_analysis.md",
-            "notes": "事实抽取阶段完成；正式成稿仍需人工或后续模型细化字段。",
+            "next_prompt": "next_prompts/next_prompt_chapter5_pairing.md",
+            "notes": "事实抽取阶段完成；下一步生成第五章事实条文人工匹配页面。",
         },
     )
     print(f"事实抽取完成：{work_dir}")

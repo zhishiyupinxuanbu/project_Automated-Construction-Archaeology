@@ -121,6 +121,51 @@ class PipelineRegressionTest(unittest.TestCase):
             self.assertIn("开工请示.txt", covered_sources)
             self.assertIn("规划平面图说明.txt", covered_sources)
 
+    def test_chapter5_pairing_page_replaces_prefill_gate(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            project_dir = root / "project"
+            output_dir = root / "work"
+            project_dir.mkdir()
+            (project_dir / "项目说明.txt").write_text(
+                "测试项目位于建设控制地带，建设内容包括新建展示用房，建筑高度9米。",
+                encoding="utf-8",
+            )
+
+            result = run_script(
+                "run_material_processing.py",
+                "--项目资料目录",
+                str(project_dir),
+                "--输出目录",
+                str(output_dir),
+                "--项目名称",
+                "测试项目",
+                "--覆盖",
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+
+            result = run_script("run_fact_extraction.py", "--workspace", str(output_dir), "--覆盖")
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertTrue((output_dir / "facts" / "requirement_facts.jsonl").exists())
+            self.assertTrue((output_dir / "next_prompts" / "next_prompt_chapter5_pairing.md").exists())
+
+            result = run_script("generate_chapter5_pairing_page.py", "--工作目录", str(output_dir))
+            self.assertEqual(result.returncode, 0, result.stderr)
+
+            html_path = output_dir / "human_input" / "chapter5_fact_rule_pairing.html"
+            seed_path = output_dir / "human_input" / "chapter5_fact_rule_pairing_seed.json"
+            self.assertTrue(html_path.exists())
+            self.assertTrue(seed_path.exists())
+            self.assertTrue((output_dir / "human_input" / "chapter5_fact_rule_pairing_seed.csv").exists())
+            self.assertTrue((output_dir / "next_prompts" / "next_prompt_analysis.md").exists())
+
+            html = html_path.read_text(encoding="utf-8")
+            self.assertIn("第五章事实与条文人工匹配", html)
+            self.assertIn("导出 JSON", html)
+            seed = json.loads(seed_path.read_text(encoding="utf-8"))
+            self.assertEqual(seed["schema"], "chapter5_fact_rule_pairing_seed.v1")
+            self.assertTrue(seed["facts"])
+
     def test_material_processing_extracts_text_from_juehai_pdf(self) -> None:
         if not JUEHAI_PROJECT_DIR.exists():
             self.skipTest("觉海寺项目资料目录不存在")
