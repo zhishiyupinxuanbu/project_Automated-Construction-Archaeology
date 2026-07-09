@@ -1,0 +1,6 @@
+interface:
+  display_name: "四有RAG档案处理"
+  short_description: "四有档案RAG证据库与复核流程"
+  default_prompt: "Use $siyou-rag-archive to design a traceable RAG workflow for 四有档案原始资料整理."
+policy:
+  allow_implicit_invocation: true

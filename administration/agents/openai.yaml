@@ -1,0 +1,6 @@
+interface:
+  display_name: "行政"
+  short_description: "将行政资料整理成exe可跑表格和页图包"
+  default_prompt: "Use $administration to turn manually provided administrative files into an exe-ready images folder and Excel workbook."
+policy:
+  allow_implicit_invocation: true
