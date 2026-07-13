@@ -9,7 +9,9 @@ from pathlib import Path
 
 
 SKILL_DIR = Path(__file__).resolve().parents[1]
-JUEHAI_PROJECT_DIR = Path("/Users/drevan01/Desktop/影响评估与保护方案skill/觉海寺项目/1.项目资料")
+JUEHAI_PROJECT_DIR = Path(
+    "/Users/drevan01/Desktop/文物影响评估与保护方案资料库/04_项目案例库/觉海寺改扩建项目/1.项目资料"
+)
 
 
 def read_jsonl(path: Path) -> list[dict]:
