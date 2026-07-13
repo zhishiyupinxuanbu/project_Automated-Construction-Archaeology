@@ -1,0 +1,4 @@
+interface:
+  display_name: "文物保护方案"
+  short_description: "生成、校核建设项目文物保护方案工作包"
+  default_prompt: "Use $heritage-protection-plan to draft a heritage protection plan from my project materials."
